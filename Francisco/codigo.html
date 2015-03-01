@@ -1,0 +1,70 @@
+
+<xmp>
+#include <stdlib.h>
+#include <string>
+#include <iostream>
+#include <time.h>
+
+using namespace std;
+
+int eleccionJugador();
+int eleccionComputadora();
+void verificar();
+
+
+int main()
+{
+
+	srand(time(NULL));
+
+
+    for (int games=0; games<3; games++)
+    {
+        verificar();
+    }
+
+    return EXIT_SUCCESS;
+}
+
+int eleccionJugador()
+{
+	int eleccion;
+	cout<<"Selecccione piedra[1] papel[2] o tijera[3]";
+	cin>>eleccion;
+	return eleccion;
+
+}
+
+int eleccionComputadora()
+{
+	int picks;
+    picks=(rand() % 3) + 1;
+    return picks;
+}
+
+void verificar()
+{
+	int ej=eleccionJugador();
+	int ec=eleccionComputadora();
+     if (ej==ec) cout<<"Empate";
+     else
+     {
+    	 if (ej==1)
+    	 {
+    		 if (ec==3) cout<<"Has ganado";
+    		 else cout<<"Has Perdido";
+    	 }
+    	 if (ej==2)
+    	 {
+    		 if(ec==1) cout<<"Has Ganado";
+    		 else cout<<"Has Perdido";
+    	 }
+    	 if(ej==3)
+    	 {
+    		 if(ec==2)cout<<"Has Ganado";
+    		 else cout<<"Has Perdido";
+    	 }
+     }
+     cout<<"\n Eleccion cpu:"<<ec<<"\n";
+}
+</xmp>

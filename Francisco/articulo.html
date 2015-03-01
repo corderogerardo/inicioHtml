@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Artículo</title>
+<link href="style/estilo.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+ <h1>Piedra papel y tijeras y cómo generar números aleatorios</h1>
+
+
+<p class="parrafo">Piedra, papel o tijeras es un juego bastante famoso y tambien simple de construir. Una forma muy facil de hacerlo es tener la 
+eleccion de ambos jugadores y luego compararlos para definir el ganador. En este programa los dos jugadores van a ser el usuario 
+que esté usando el programa y una computadora que escoja piedra papel o tijeras al azar.</p>
+<p>Para lograr que el programa genere una respuesta aleatoria se va a hacer uso de la función<b> rand()</b>. <u> La funcion rand es parte de la libreria stdlib.h por lo que se debe incluir usando #include.</u></p>
+
+
+
+<p>La Funcion rand genera un número o una secuencia de números pseudoaleatoria. Esto es importante, ya que el azar en esta funcion no 
+es un azar verdadero, sino una secuencia de números aparentemente aleatoria. A esta función se le puede asignar valores minimos y 
+máximos para que retorne. El valor máximo se define usando el operador de modulo y utilizando el valor maximo, en el caso del valor 
+minimo se hace una suma de el resultado del modulo mas el valor minimo. Ejemplo:</p>
+<img src="funcion rand ejemplo.png">
+
+<p>Donde aleatorio es una variable donde se almacena el numero generado. En nuestro caso se necesitan del 1 al 3 para representar piedra, papel o tijeras, asi que la función se debe ver de esta manera:</p>
+<img src="funcion rand.png">
+
+<p>Con esto completo se hace un ciclo de 3 partidas (para propósitos de ejemplo) y se corre el programa.</p>
+
+<img src="intento 1.png">
+<img src="intento 2.png">
+<img src="intento 3.png">
+
+<p>Se puede ver que los números generados aleatoriamente por la computadora siempre son 2, 2, y 1 sin importar las veces que se corra 
+el programa. Esto es debido a que, como se mencionó anteriormente, la función rand() genrera numeros que parecen aleatorios pero no
+los son. Esta se vale de una <b> semila (seed)</b> para generar una secuencias de numeros. Como no se especificó semilla, siempre va a dar
+los mismos valores. Para resolver el problema se consigue una semilla a través del tiempo del sistema.
+</p>
+
+<p>Esto se hace con la funcion <b>time(NULL)</b> , la cual arroja un valor diferente dependiente al tiempo que tenga el reloj de la computadora.</p>
+<p><u> La funcion time es parte de la libreria time.h por lo cual se debe incluir con #include</u></p>
+<p>Ahora que se tiene un valor que cambia cada vez que se inicia el programa, entonces se introduce como semilla utilizando a <b> srand()</b>
+antes de invocar a rand(). Esto se hace de la siguiente manera:</p>
+<img src="srand con tiempo.png">
+
+<p><b> srand()</b> es una funcion que se usa para especificar semillas.Gracias a esto se va a introducir una semilla diferente cada vez que inicie el programa y por ende se genera una secuencia de numeros
+diferentes, esto implica que la computadora elegirá de forma diferente también.
+</p>
+
+<img src="intento con tiempo 1.png">
+<p>Aquí se ven que los números generados son diferentes.</p>
+<img src="intento con tiempo 2.png">
+
+
+
+<p>Para ver el código utilizado en este programa <a href="codigo.html">haga click aqui</a></p>
+
+
+
+</body>
+</html>
+
