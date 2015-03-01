@@ -1,3 +1,7 @@
+-webkit-prop args,
+-moz-prop args,
+-ms-prop args,
+-o-prop args,
 body {
 /* el atributo background se usa en body, asi como en etiquetas que hagan la funcion de contenedor, 
 	div, article, section, footer...
@@ -30,6 +34,9 @@ body {
   padding: 0;
   width: 100%;
 /*CAJA con borde ANARANJADO hace referencia a la etiqueta NAV*/
+/*aca utilizamos el parametro hover, el cual es la accion o lo que va a ocurrir cuando 
+		coloquemos el cursos sobre el objeto que estamos manipulando o al cual vamos a hacer click
+		*/
 }
 #menu nav {
   font-size: 1.2em;
@@ -58,6 +65,15 @@ body {
 }
 #menu a:hover {
   color: #c0392b;
+  text-decoration: none;
+}
+#menu a:active {
+  background-color: #ecf0f1;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
   text-decoration: none;
 }
 /*Fin del menu
@@ -95,6 +111,7 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
   margin-left: 10%;
   margin-right: 10%;
 }
+/* inicio DE LA CAJA azul claro, CONTENEDORA DE LA CAJA de la foto, esta caja ocupa 40% de la caja azul oscuro*/
 #imagenFotoIzquierda {
   border: 2px solid #2980b9;
   height: 100%;
@@ -116,6 +133,11 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
   margin-top: 2%;
   width: 55%;
   vertical-align: center;
+/*fin de la caja azul claro*/
+/*inicio DE LA CAJA blanca, 
+	CONTENEDORA DE LA CAJA de blanca, 
+	para el titulo,subtitulo y boton, 
+	esta caja ocupa 60% de la caja azul oscuro*/
 }
 #imagenTituloDerecha {
   border: 2px solid #ecf0f1;
@@ -124,6 +146,12 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
   margin-top: 5%;
   text-align: left;
   width: 60%;
+/*div utilizado para dar aspecto de boton claro*/
+/*ACA como pueden observar tomamos nuevamente el boton
+	pero con la particularidad de que le pasamos la propiedad
+		:hover la cual usaremos mucho, esta asociada a la accion
+		que se ejecuta cuando pasamos el cursos sobre cualquier objeto	
+		*/
 }
 #imagenTituloDerecha h1 {
   font-size: 4em;

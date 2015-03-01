@@ -33,6 +33,11 @@ bordes(n)
 	-ms-border-radius n
 	-o-border-radius n
 	border-radius n
+vendor(prop, args)
+  -webkit-{prop} args
+  -moz-{prop} args
+  -ms-{prop} args
+  -o-{prop} args
 
 body
 	/* el atributo background se usa en body, asi como en etiquetas que hagan la funcion de contenedor, 
@@ -53,8 +58,7 @@ body
 	background-color rosapomegranade
 	//border 2px solid black
 	height 450px
-	width 100%
-	
+	width 100%	
 	/*INICIO MENU
 		CAJA con borde AMARILLO menu
 		CONTENDRA AL MENU
@@ -89,11 +93,17 @@ body
 		//border 1px solid nephritis
 		color blanco
 		text-decoration none
-					
+	
+	/*aca utilizamos el parametro hover, el cual es la accion o lo que va a ocurrir cuando 
+		coloquemos el cursos sobre el objeto que estamos manipulando o al cual vamos a hacer click
+		*/				
 	a:hover
-		color: pomegranade
+		color pomegranade
 		text-decoration none
-
+	a:active
+		background-color blanco
+		bordes 5px
+		text-decoration none
 /*Fin del menu
 
 ---
@@ -119,6 +129,7 @@ que va a contener:
 		lo cual nos permite asignarle un margen izquierdo y un margen derecho,
 		para lograr el efecto de que quede centrada
 
+inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta caja ocupa el 80% de ancho de la web y va centrada
 		*/
 #contenedorCentrado
 	//border 2px solid midnightblue
@@ -127,6 +138,7 @@ que va a contener:
 	width 80%
 	margin-left 10%
 	margin-right 10%
+/* inicio DE LA CAJA azul claro, CONTENEDORA DE LA CAJA de la foto, esta caja ocupa 40% de la caja azul oscuro*/	
 #imagenFotoIzquierda
 	//border 2px solid belizehola
 	height 100%
@@ -143,10 +155,15 @@ que va a contener:
 	margin-top 2%
 	width 55%
 	vertical-align center
+	/*fin de la caja azul claro*/	
+	/*inicio DE LA CAJA blanca, 
+	CONTENEDORA DE LA CAJA de blanca, 
+	para el titulo,subtitulo y boton, 
+	esta caja ocupa 60% de la caja azul oscuro*/
 #imagenTituloDerecha
 	//border 2px solid blanco
 	color blanco
-	height 100%
+	height 50%
 	margin-top 5%
 	text-align left
 	width 60%
@@ -159,6 +176,7 @@ que va a contener:
 		font-weight lighter
 		margin 0
 		padding 0
+	/*div utilizado para dar aspecto de boton claro*/
 	#botonAspect
 		background-color wetasphalt
 		bordes 15px
@@ -167,6 +185,11 @@ que va a contener:
 		h4
 			line-height 50px
 			text-align center
+	/*ACA como pueden observar tomamos nuevamente el boton
+	pero con la particularidad de que le pasamos la propiedad
+		:hover la cual usaremos mucho, esta asociada a la accion
+		que se ejecuta cuando pasamos el cursos sobre cualquier objeto	
+		*/
 	#botonAspect:hover
 		background-color blanco
 		color wetasphalt

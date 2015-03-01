@@ -1,0 +1,187 @@
+-webkit-prop args,
+-moz-prop args,
+-ms-prop args,
+-o-prop args,
+body {
+/* el atributo background se usa en body, asi como en etiquetas que hagan la funcion de contenedor, 
+	div, article, section, footer...
+	*/
+  background-color: rgba(231,76,60,0.6);
+  color: #95a5a6;
+/* el atributo font-family sirve para agregarle un tipo de fuente al la pagina web */
+  font-family: 'Helvetica', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+}
+/*	caja principal de la primera seccion de la web	*/
+/*CAJA con borde NEGRO cabecera ES LA CAJA EXTERNA MAS GRANDE DE TODAS QUE CONTENDRA A TODAS LAS DEMAS*/
+.cabecera {
+  background-color: rgba(192,57,43,0.5);
+  height: 450px;
+  width: 100%;
+/*INICIO MENU
+		CAJA con borde AMARILLO menu
+		CONTENDRA AL MENU
+		es importante observar que la caja va de esquina a esquina esta al 100% del ancho de la pantalla 
+			*/
+}
+#menu {
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+/*CAJA con borde ANARANJADO hace referencia a la etiqueta NAV*/
+/*aca utilizamos el parametro hover, el cual es la accion o lo que va a ocurrir cuando 
+		coloquemos el cursos sobre el objeto que estamos manipulando o al cual vamos a hacer click
+		*/
+}
+#menu nav {
+  font-size: 1.2em;
+  height: 100%;
+  line-height: 100px;
+  margin-left: 45%;
+  width: 700px;
+}
+#menu ul {
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+/*CAJA con borde BLANCO hace referencia a la etiqueta LI*/
+}
+#menu li {
+  display: inline;
+  padding: 0 0.8em 0 0;
+/*CAJA con borde VERDE OSCURO hace referencia a la etiqueta A*/
+}
+#menu a {
+  color: #ecf0f1;
+  text-decoration: none;
+}
+#menu a:hover {
+  color: #c0392b;
+  text-decoration: none;
+}
+#menu a:active {
+  background-color: #ecf0f1;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+/*Fin del menu
+
+---
+*/
+/*contenido de la caja gris grande debajo de la caja amarilla del menu, 
+que va a contener:
+1era una caja que va a ser mas pequeña para poder centrarla, esta caja va a contener a las siguientes cajas
+2era caja para la imagen, ubicada al lado izquierdo de la pantalla
+3da caja para el texto y boton ubicada a la derecha.
+*/
+#imagenNombre {
+  background: url("../img/paris.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-attachment: transparent;
+  background-size: 100% 85%;
+  height: 350px;
+  width: 100%;
+/* es la caja azul noche, su ancho es mas pequeño 
+		
+		lo cual nos permite asignarle un margen izquierdo y un margen derecho,
+		para lograr el efecto de que quede centrada
+
+inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta caja ocupa el 80% de ancho de la web y va centrada
+		*/
+}
+#contenedorCentrado {
+  display: inline-flex;
+  height: 100%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+/* inicio DE LA CAJA azul claro, CONTENEDORA DE LA CAJA de la foto, esta caja ocupa 40% de la caja azul oscuro*/
+#imagenFotoIzquierda {
+  height: 100%;
+  width: 40%;
+}
+#fotosj {
+  background: url("../img/sj.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 135%;
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  -ms-border-radius: 200px;
+  -o-border-radius: 200px;
+  border-radius: 200px;
+  height: 70%;
+  margin-left: 40%;
+  margin-top: 2%;
+  width: 55%;
+  vertical-align: center;
+/*fin de la caja azul claro*/
+/*inicio DE LA CAJA blanca, 
+	CONTENEDORA DE LA CAJA de blanca, 
+	para el titulo,subtitulo y boton, 
+	esta caja ocupa 60% de la caja azul oscuro*/
+}
+#imagenTituloDerecha {
+  color: #ecf0f1;
+  height: 50%;
+  margin-top: 5%;
+  text-align: left;
+  width: 60%;
+/*div utilizado para dar aspecto de boton claro*/
+/*ACA como pueden observar tomamos nuevamente el boton
+	pero con la particularidad de que le pasamos la propiedad
+		:hover la cual usaremos mucho, esta asociada a la accion
+		que se ejecuta cuando pasamos el cursos sobre cualquier objeto	
+		*/
+}
+#imagenTituloDerecha h1 {
+  font-size: 4em;
+  margin: 0;
+  padding: 0;
+}
+#imagenTituloDerecha h4 {
+  font-size: 1.5em;
+  font-weight: lighter;
+  margin: 0;
+  padding: 0;
+}
+#imagenTituloDerecha #botonAspect {
+  background-color: #34495e;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+  height: 50px;
+  width: 150px;
+}
+#imagenTituloDerecha #botonAspect h4 {
+  line-height: 50px;
+  text-align: center;
+}
+#imagenTituloDerecha #botonAspect:hover {
+  background-color: #ecf0f1;
+  color: #34495e;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+  height: 50px;
+  width: 150px;
+}
+#imagenTituloDerecha #botonAspect:hover h4 {
+  line-height: 50px;
+  text-align: center;
+}
