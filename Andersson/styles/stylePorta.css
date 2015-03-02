@@ -1,0 +1,27 @@
+body {
+
+	background-color:rgba(189, 195, 199,1.0);
+
+}
+
+font
+{
+
+	color: rgba(52, 73, 94,1.0);
+	text-decoration:underline;
+
+}
+
+.Contraheader
+{
+	height: 50%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+p
+{
+	color: rgba(52, 73, 94,1.0);
+	font-size: 500%;
+}

@@ -1,0 +1,40 @@
+.etiquetaroja {
+	font-size: 14px;
+	font-weight: bold;
+	color: #CC3333;
+}
+.atributoazul {
+	font-size: 14px;
+	color: #003399;
+	font-weight: bold;
+
+}
+.nombreverde {
+	font-size: 14px;
+	font-style: italic;
+	font-weight: bold;
+	color: #339933;
+}
+.palabramarron {
+	font-size: 14px;
+	font-weight: bold;
+	color: #663300;
+}
+.textocursiva {
+	font-size: 14px;
+	font-style: italic;
+	font-weight: bold;
+	color: #666666;
+
+
+}
+.textonegrita {
+	font-size: 14px;
+	font-weight: bold;
+}
+.texto {
+	font-size:13px;
+	font-weight:normal;
+	margin: auto;
+
+}

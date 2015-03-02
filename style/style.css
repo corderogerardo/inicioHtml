@@ -204,6 +204,7 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
   color: #000;
   display: flex;
   height: 100px;
+  justify-content: center;
   width: 100%;
 }
 #titulos h1 {
@@ -211,7 +212,90 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
   font-size: 3em;
   font-weight: lighter;
   line-height: 30px;
-  margin-left: 45%;
   padding: 0;
   width: 100px;
+}
+#portafolio {
+  border: 3px solid #fff;
+  display: inline-flex;
+  height: 500px;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+#columnaIzquierda {
+  border: 2px solid #000;
+  display: flex;
+  height: 100%;
+  margin-right: 10px;
+  padding: 0;
+  width: 20%;
+}
+#columnaDerecha {
+  border: 2px solid #f1c40f;
+  display: flex-inline;
+  flex-direction: row;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 80%;
+}
+/*Fila Derecha arriba color verde oceano*/
+#derechaArriba {
+  border: 2px solid #16a085;
+  display: flex;
+  height: 65%;
+  margin-bottom: 10px;
+  padding: 0;
+  width: 100%;
+}
+#AcolumnaUno {
+  border: 1px solid #f39c12;
+  height: 100%;
+  margin-right: 10px;
+  padding: 0;
+  order: 1;
+  width: 30%;
+}
+#AcolumnaDos {
+  border: 1px solid #ecf0f1;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  order: 2;
+  width: 70%;
+}
+/*inicio fila derecha abajo*/
+#derechaAbajo {
+  border: 2px solid #f00;
+  display: flex;
+  height: 30%;
+  padding: 0;
+  width: 100%;
+}
+#BcolumnaUno {
+  border: 1px solid #f39c12;
+  height: 100%;
+  margin-right: 10px;
+  padding: 0;
+  order: 1;
+  width: 33%;
+}
+#BcolumnaDos {
+  border: 1px solid #ecf0f1;
+  height: 100%;
+  margin: 0;
+  margin-right: 10px;
+  padding: 0;
+  order: 2;
+  width: 33%;
+}
+#BcolumnaTres {
+  border: 1px solid #ecf0f1;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  order: 3;
+  width: 33%;
 }
