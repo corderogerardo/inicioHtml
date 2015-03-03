@@ -1,0 +1,121 @@
+.G
+{
+color: blue;
+}
+.o
+{
+	color:red;
+}
+.O
+{
+	color:yellow;
+}
+.g
+{
+	color: blue;
+}
+.l
+{
+	color: green;
+}
+.e
+{
+	color: red;
+}
+
+.gil
+{
+	display: flex;
+	flex-flow:row;
+    justify-content:flex-star;
+    align-items:flex-star;
+    aling-content:flex-aero;
+    margin-left: 90px;
+    top: 50%;
+    margin-top: -50px;
+    width: 600px;
+    border-radius: 10px;
+}
+.gil div.a
+{
+	order:0;
+	flex:1;
+	aling-self:flex-star;
+    border:1px solid black;
+     border: 1px solid #8888bb;
+   border-radius: 7pt;
+    border-right: 1px;
+}
+.gil div.b
+{
+	border:1px solid black;
+	border-left: 1px;
+	border: 1px solid #cccc33;
+   border-radius: 7pt;
+}
+#uno
+{
+  height: 200px;
+  width: 1000px;
+   margin: 0px;
+   padding: 0px;
+    display: inline-flex;
+    flex-direction: row;
+   
+ }
+#q
+{
+  flex: 0 1 auto;
+  order:0;
+  align-self: auto;
+  border:1px solid black;
+  border: 1px solid #8888bb;
+  border-radius: 7pt;
+  border-right: 1px;
+  height: 100px;
+  width: 100px;
+}
+#w
+{
+ flex: 0 1 auto;
+  order:0;
+  align-self: auto;
+border:1px solid black;
+  border-left: 1px;
+  border: 1px solid #cccc33;
+   border-radius: 7pt;
+   height: 100px;
+  width: 100px;
+}
+#e
+{
+flex: 0 1 auto;
+  order:0;
+  align-self: auto;
+border:1px solid black;
+	border-left: 1px;
+	border: 1px solid #cccc33;
+   border-radius: 7pt;
+   height: 100px;
+  width: 100px;
+}
+#r
+{
+flex: 0 1 auto;
+  order:0;
+  align-self: auto;
+border:1px solid black;
+  border-left: 1px;
+  border: 1px solid #cccc33;
+   border-radius: 7pt;
+   height: 100px;
+  width: 100px;
+}
+   }
+#dos 
+{
+ min-height: 800px;
+   margin: 0px;
+   padding: 0px;
+  display: inline-flex;
+    flex-direction: row;
