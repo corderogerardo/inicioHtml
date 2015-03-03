@@ -1,3 +1,9 @@
 {
-    "url": "https://floobits.com/corderogerardo/ClaseHTML5CSS3"
+    "url": "https://floobits.com/corderogerardo/ClaseHTML5CSS3",
+    "hooks": {
+        "*.js": "cd /path/to/django && ./manage.py compress --force",
+        "*.py": "touch /path/to/django/django.wsgi",
+        "*.less": "/web/regenerate_less.sh",
+        "*": "echo #FLOO_HOOK_FILE"
+    }
 }

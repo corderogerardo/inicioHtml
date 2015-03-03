@@ -208,6 +208,8 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
   height: 100px;
   justify-content: center;
   width: 100%;
+/*Fin de la caja del titulo*/
+/*Inicio del contenido del portafolio*/
 }
 #titulos h1 {
   height: 100px;
@@ -216,16 +218,16 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
   line-height: 30px;
   padding: 0;
   width: 100px;
-/*Fin de la caja del titulo*/
 }
 #portafolio {
   border: 3px solid #fff;
-  display: inline-flex;
+  display: flex;
   height: 500px;
   flex-direction: row;
   margin: 0;
   padding: 0;
   width: 100%;
+/*Columna izquierda unica columna, grande de alto=height*/
 }
 #columnaIzquierda {
   background: url("../img/portafolio/cuadroUno.jpg");
@@ -239,6 +241,7 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
   margin-right: 10px;
   padding: 0;
   width: 20%;
+/**/
 }
 #columnaDerecha {
   border: 2px solid #f1c40f;
@@ -326,4 +329,65 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
   padding: 0;
   order: 3;
   width: 33%;
+}
+/*Fin de la seccion portafolio*/
+/*Inicio de la seccion de articulos*/
+#cuerpoArticulo {
+/*esta caja contendra a la caja utilizada para centrar los articulos*/
+  border: 1px solid #000;
+  background-color: #ecf0f1;
+  font-family: "Helvetica" sans-serif;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 300px;
+}
+#cajaArticulos {
+/*Esta caja contendra a las 3 cajas o culumnas de los articulos*/
+  border: 3px solid #ff0;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  order: 2;
+  height: 100%;
+  width: 90%;
+}
+#cajaArticulos + #articuloA + #articuloB + #articuloC {
+  padding: 0;
+  margin: 0;
+}
+#articuloA,
+#articuloB,
+#articuloC {
+  background-color: #fff;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+}
+#articuloA {
+  border: 3px solid #006400;
+  height: 100%;
+  order: 1;
+  margin-right: 3%;
+  width: 40%;
+}
+#articuloB {
+  border: 3px solid #00008b;
+  height: 100%;
+  order: 2;
+  margin-right: 3%;
+  width: 40%;
+}
+#articuloC {
+  border: 3px solid #8b0000;
+  height: 100%;
+  order: 3;
+  padding: 0;
+  margin: 0;
+  width: 40%;
 }
