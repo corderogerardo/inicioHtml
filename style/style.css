@@ -391,3 +391,88 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
   margin: 0;
   width: 40%;
 }
+/*Fin de articulos*/
+/*Inicio de la seccion de contacto*/
+#contacto {
+  background-color: #e1e3e2;
+  border: 1 solid #f39c12;
+  color: #000;
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+#contactoCentrado {
+  background-color: #ecf0f1;
+  border: 2px solid #f39c12;
+  display: inline-flex;
+  height: 100%;
+  width: 80%;
+}
+#columnaImg {
+  border: 1px solid rgba(231,76,60,0.6);
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 50%;
+}
+#imag {
+  background: url("../img/sj.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  height: 100%;
+  width: 100%;
+}
+#columnaContac {
+  align-items: flex-start;
+  background-color: #e1e3e2;
+  border: 1px solid #3498db;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 50%;
+}
+#columnaContac h1,
+#columnaContac h3,
+#columnaContac p,
+#columnaContac h4 {
+  margin: 0;
+  padding: 0;
+  order: 0;
+}
+#columnaContac h1 {
+  font-size: 3.5em;
+}
+#columnaContac h3 {
+  font-size: 2em;
+}
+#columnaContac p,
+#columnaContac h4 {
+  font-size: 1.5em;
+}
+footer {
+  align-content: center;
+  align-items: center;
+  background-color: #323232;
+  color: #ecf0f1;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+#autores {
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}

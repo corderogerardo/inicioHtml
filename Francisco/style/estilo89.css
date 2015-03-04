@@ -4,11 +4,18 @@ body
 
 	background-color: #34495e;
 }
+h2
+{
+	font-family: "Helvetica", sans-serif;
+
+
+}
+
 #cuerpo
 {	
 	display: flex;
 	flex-direction: column;
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	background-color: #FFF;
 	font-family: "Helvetica", sans-serif;
 	color: #000;
@@ -19,74 +26,64 @@ body
 
 #cajaArticulos
 {	
-	border:3px solid yellow;
+
+	/*border:3px solid yellow;*/
 	margin: 0;
 	padding: 0;
 	display: inline-flex;
 	order: 2;
 	height: 70%;
 	width: 100%;
+	text-align: center; 
 }
 #cajaTitulo
 {
-	border: 3px solid green;
+	/*border: 3px solid green;*/
 	text-align: center;
 	margin: 0;
 	padding: 0;	
 	order: 1;
 	width: 100%;
-	height: 10%;
+	height: 15%;
+	margin-bottom: 3%;
+	margin-top: 2%;
 
 }
 #articuloA
 {
-	border: 3px solid darkgreen;
+	/*border: 3px solid darkgreen;*/
 	height: 80%
 	order: 1;
 	padding: 0;
-	margin: 0;
-	margin-right: 14%;
-	width: 24%;
+	margin-left: 5%;
+	margin-right: 3%;
+	width: 28%;
+	background-color: #bdc3c7;
+	border-radius: 25px;
 }
 #articuloB
 {
-	border: 3px solid darkblue;
+	/*border: 3px solid darkblue;*/
 	height: 100%
 	order: 2;
 	padding: 0;
-	margin-right: 14%;
-	width: 24%;
+	margin-right: 3%;
+	width: 28%;
+	background-color: #bdc3c7;
+	border-radius: 25px;
+
 }
 #articuloC
 {
-	border: 3px solid darkred;
+	/*border: 3px solid darkred;*/
 	height: 70%
 	order: 3;
 	padding: 0;
 	margin: 0;
-	width: 24%;
+	width: 28%;
+	margin-right: 5%;
+	background-color: #bdc3c7;
+	border-radius: 25px;
+
 }
 
-/*
-ul#articulo li
-{
-	display: inline;
-}
-
-
-ul#articulo li a
-{	
-	width: 20%;
-	height: 40%;
-	border-radius: 13px;
-	background-color: lime;
-	border: 1px solid blue;
-}
-ul#articulo li a:hover
-{	
-	width: 20%;
-	height: 40%;
-	border-radius: 13px;
-	background-color: yellow;
-	border: 1px solid blue;
-}*/

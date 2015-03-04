@@ -19,6 +19,77 @@ font
 	background-color: rgba(236, 240, 241,1.0);
 }
 
+.bodytext
+{
+
+	font-style: oblique;
+	height: 80%;
+	width: 40%;
+	background-color: rgba(236, 240, 241,1.0);
+}
+ 
+#LogoFoto
+{
+	/*caja padre*/
+	display: inline-flex;
+	flex-direction: row;
+	background-color: black;
+	height: 500px;
+	width: 100%;
+}
+#uno
+{
+	/*cajas que heredan de inline-flex*/
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	/*alto y ancho*/
+    height: 250px;
+    width: 250px;
+    margin-right: 10px;
+    background-color: yellow;
+    position: relative;
+    left: 100px;
+    top: 100px;
+
+    /* bottom: */ 
+	
+	/* 
+[
+	{ "keys": ["Ctrl+space"], "command": "auto_complete" },
+	{ "keys": ["ctrl+|"], "command": "toggle_comment", "args": { "block": true } },
+
+]
+
+	*/
+ }
+
+ {
+ 	margin-right: 2px;
+	height: 100px;
+    width: 100px;
+    background-color: gray;
+}
+#unodos
+{
+	height: 100px;
+    width: 100px;
+    background-color: pink;
+}
+#dos
+{
+	height: 250px;
+	width: 250px;
+	margin-right: 10px;	
+	background-color: white;
+}
+#tres
+{
+	height: 250px;
+	width: 250px;
+	background-color: white;
+}
+
 .Contraheader
 {
 	display: flex;
