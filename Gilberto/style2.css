@@ -1,0 +1,535 @@
+#Caja
+{
+ display: inline-flex;
+ flex-direction: row;
+ background-color: white;
+ height: 600px;
+ width: 1 
+}
+#uno
+{
+   display: flex;
+ justify-content: center;
+ align-items:center;
+   height: 550px;
+    width: 550px;
+    background-color: yellow;
+    position: relative;
+    left: 25px;
+    top: 25px;
+   border-radius: 5px;
+   transition-property:background-color;
+transition-duration:.5s;
+transition-delay: .3s;
+}
+#Caja:hover> #uno
+{
+  background-color: rgba(39, 174, 96,1.0);
+}
+#unoa
+{
+  height: 500px;
+    width: 500px;
+    background-color: gray;
+border-radius: 5px;
+transition-property: background-color;
+transition-duration: .5s;
+transition-delay: .5s;
+
+}
+#uno:hover>#unoa
+{
+    background-color: rgba(46, 204, 113,1.0);
+}
+#unob
+{
+   height: 450px;
+   width: 450px;
+   background-color:rgba(231, 76, 60,0.6);
+   position: relative;
+   left: 25px;
+   top: 25px;
+border-radius: 5px;
+transition-property: background-color;
+transition-duration: .5s;
+transition-delay: .8s;
+}
+#unoa:hover>#unob
+{
+   background-color:rgba(243, 156, 18,1.0);
+  
+
+}
+#unoc
+{
+   height: 400px;
+   width: 400px;
+   background-color:rgba(192, 57, 43,1.0);
+   position: relative;
+   left: 25px;
+   top: 25px;
+border-radius: 5px;
+transition-property: background-color;
+transition-duration: .5s;
+transition-delay: 1s;
+}
+#unob:hover>#unoc
+{
+ 
+   background-color:rgba(241, 196, 15,1.0);
+ 
+}
+#unod
+{
+   height: 350px;
+   width: 350px;
+   background-color:rgba(236, 240, 241,1.0);
+   position: relative;
+   left: 25px;
+   top: 25px;
+border-radius: 5px;
+transition-property: background-color;
+transition-duration: .5s;
+transition-delay: 1.3s;
+}
+#unoc:hover>#unod
+{
+   background-color:rgba(22, 160, 133,1.0);
+    
+}
+#unoe
+{
+   height: 300px;
+   width: 300px;
+   background-color:rgba(149, 165, 166,1.0);
+   position: relative;
+   left: 25px;
+   top: 25px;
+border-radius: 5px;
+transition-property: background-color;
+transition-duration: .5s;
+transition-delay: 1.5s;
+}
+#unod:hover> #unoe
+{
+    background-color:rgba(26, 188, 156,1.0)
+}
+#unof
+{
+   height:250px;
+   width:250px;
+   background-color:rgba(26, 188, 156,1.0);
+   position: relative;
+   left: 25px;
+   top: 25px;
+   border-radius: 5px;
+   transition-property: background-color;
+transition-duration: .5s;
+transition-delay: 1.8s;
+   
+}
+#unoe:hover> #unof
+{
+   background-color:rgba(149, 165, 166,1.0);
+}
+#unog
+{
+   height:200px;
+   width:200px;
+   background-color:rgba(22, 160, 133,1.0);
+   position: relative;
+   left: 25px;
+   top: 25px;
+   border-radius: 5px;
+   transition-property: background-color;
+transition-duration: .5s;
+transition-delay: 2s;
+}
+#unof:hover> #unog
+{
+   background-color:rgba(236, 240, 241,1.0);
+}
+#unoh
+{
+   height:150px;
+   width:150px;
+   background-color:rgba(241, 196, 15,1.0);
+   position: relative;
+   left: 25px;
+   top: 25px;
+   border-radius: 5px;
+     transition-property: background-color;
+     transition-duration: .5s;
+     transition-delay: 2.3s;
+}
+#unog:hover> #unoh
+{
+   background-color:rgba(192, 57, 43,1.0);
+}
+#unoi
+{
+   height:100px;
+   width:100px;
+   background-color:rgba(243, 156, 18,1.0);
+   position: relative;
+   left: 25px;
+   top: 25px;
+   border-radius: 5px;
+    transition-property:background-color;
+transition-duration:.5s;
+transition-delay: 2.8s;
+}
+#unoh:hover> #unoi
+{
+   background-color:rgba(231, 76, 60,0.6);
+ }
+#unoj
+{
+   height:50px;
+   width:50px;
+   background-color:rgba(46, 204, 113,1.0);
+   position: relative;
+   left: 25px;
+   top: 25px;
+   border-radius: 5px;
+    transition-property:background-color;
+transition-duration:.5s;
+transition-delay: 3s;
+}
+#unoi:hover> #unoj
+{
+   background-color:gray;
+}
+#unok
+{
+   height:25px;
+   width:25px;
+   background-color:rgba(39, 174, 96,1.0);
+   position: relative;
+   left: 12.5px;
+   top: 12.5px;
+   border-radius: 5px;
+    transition-property:background-color;
+transition-duration:.5s;
+transition-delay: 3.3s;
+}
+#unoj:hover> #unok
+{
+
+   background-color:yellow;
+}
+#gil
+{
+  
+  display: flex;
+  justify-content: center;
+  align-items:center;
+    height: 550px;
+    width: 550px;
+    background-color: black;
+    position: relative;
+    left: 70px;
+    top: 25px;
+    border-radius: 5px;
+   animation: prueba 10s;
+    /*animation-iteration-count: infinite;*/
+}
+
+@keyframes prueba
+{
+   0%   {background:rgba(44, 62, 80,1.0) ;}
+    10%  {background:rgba(52, 73, 94,1.0);}
+    20%  {background:rgba(189, 195, 199,1.0);}
+    30% {background:rgba(236, 240, 241,1.0);}
+    40%  {background: rgba(142, 68, 173,1.0);} 
+    50%  {background:rgba(155, 89, 182,1.0); }
+    60%  {background: rgba(231, 76, 60,1.0);}
+    70%  {background:rgba(41, 128, 185,1.0);}
+    80%  {background:rgba(52, 152, 219,1.0); }
+    90%  {background:rgba(211, 84, 0,1.0); }
+    100%  {background: rgba(230, 126, 34,1.0)}
+  
+}
+#noa
+ {
+  height: 500px;
+    width: 500px;
+    background-color:rgba(230, 126, 34,1.0);
+border-radius: 5px;
+animation: pruebaa 10s;
+}
+@keyframes pruebaa
+{
+   0%   {background:black;}
+    10%  {background:rgba(44, 62, 80,1.0);}
+    20%  {background:rgba(52, 73, 94,1.0);}
+    30% {background:rgba(189, 195, 199,1.0);}
+    40%  {background: rgba(236, 240, 241,1.0);} 
+    50%  {background:rgba(142, 68, 173,1.0); }
+    60%  {background: rgba(155, 89, 182,1.0);}
+    70%  {background:rgba(231, 76, 60,1.0);}
+    80%  {background:rgba(41, 128, 185,1.0); }
+    90%  {background:rgba(52, 152, 219,1.0);}
+    100%  {background: rgba(211, 84, 0,1.0);}
+  
+}
+#nob
+{
+   height: 450px;
+   width: 450px;
+   background-color:rgba(211, 84, 0,1.0);
+   position: relative;
+   left: 25px;
+   top: 25px;
+   border-radius: 5px;
+   animation: pruebab 10s;
+}
+@keyframes pruebab
+{
+   0%   {background:rgba(211, 84, 0,1.0);}
+    10%  {background:black;}
+    20%  {background:rgba(44, 62, 80,1.0);}
+    30% {background:rgba(52, 73, 94,1.0);}
+    40%  {background: rgba(189, 195, 199,1.0);} 
+    50%  {background:rgba(236, 240, 241,1.0); }
+    60%  {background:rgba(142, 68, 173,1.0);}
+    70%  {background: rgba(155, 89, 182,1.0);}
+    80%  {background:rgba(231, 76, 60,1.0);}
+    90%  {background:rgba(41, 128, 185,1.0); }
+    100%  {background: rgba(52, 152, 219,1.0);}
+  
+}
+#noc
+{
+   height: 400px;
+   width: 400px;
+   background-color:rgba(52, 152, 219,1.0);
+   position: relative;
+   left: 25px;
+   top: 25px;
+   border-radius: 5px;
+   animation: pruebac 10s;
+}
+@keyframes pruebac
+{
+   0%   {background: rgba(52, 152, 219,1.0);}
+    10%  {background:rgba(211, 84, 0,1.0);}
+    20%  {background:black;}
+    30% {background:rgba(44, 62, 80,1.0);}
+    40%  {background:rgba(52, 73, 94,1.0);} 
+    50%  {background:rgba(189, 195, 199,1.0); }
+    60%  {background:rgba(236, 240, 241,1.0);}
+    70%  {background:rgba(142, 68, 173,1.0); }
+    80%  {background:rgba(155, 89, 182,1.0);}
+    90%  {background:rgba(231, 76, 60,1.0);}
+    100%  {background:rgba(41, 128, 185,1.0);}
+  
+}
+#nod
+{
+   height: 350px;
+   width: 350px;
+   background-color:rgba(41, 128, 185,1.0);
+   position: relative;
+   left: 25px;
+   top: 25px;
+   border-radius: 5px;
+   animation: pruebad 10s;
+}
+@keyframes pruebad
+{
+   0%   {background: rgba(41, 128, 185,1.0);}
+    10%  {background:rgba(52, 152, 219,1.0);}
+    20%  {background:rgba(211, 84, 0,1.0);}
+    30% {background:black;}
+    40%  {background:rgba(44, 62, 80,1.0);} 
+    50%  {background:rgba(52, 73, 94,1.0);}
+    60%  {background:rgba(189, 195, 199,1.0);}
+    70%  {background:rgba(236, 240, 241,1.0); }
+    80%  {background:rgba(142, 68, 173,1.0);}
+    90%  {background:rgba(155, 89, 182,1.0);}
+    100%  {background:rgba(231, 76, 60,1.0);}
+  
+}
+#noe
+{
+   height: 300px;
+   width: 300px;
+   background-color:rgba(231, 76, 60,1.0);
+   position: relative;
+   left: 25px;
+   top: 25px;
+   border-radius: 5px;
+   animation: pruebae 10s;
+}
+@keyframes pruebae
+{
+   0%   {background:rgba(231, 76, 60,1.0);}
+    10%  {background:rgba(41, 128, 185,1.0);}
+    20%  {background:rgba(52, 152, 219,1.0);}
+    30% {background:rgba(211, 84, 0,1.0);}
+    40%  {background:black;} 
+    50%  {background:rgba(44, 62, 80,1.0);}
+    60%  {background:rgba(52, 73, 94,1.0);}
+    70%  {background:rgba(189, 195, 199,1.0); }
+    80%  {background:rgba(236, 240, 241,1.0);}
+    90%  {background:rgba(142, 68, 173,1.0);}
+    100%  {background:rgba(155, 89, 182,1.0);}
+  
+}
+#nof
+{
+   height:250px;
+   width:250px;
+   background-color:rgba(155, 89, 182,1.0);
+   position: relative;
+   left: 25px;
+   top: 25px;
+   border-radius: 5px;
+   animation: pruebaf 10s;
+}
+@keyframes pruebaf
+{
+    0%   {background:rgba(155, 89, 182,1.0);}
+    10%  {background:rgba(231, 76, 60,1.0);}
+    20%  {background:rgba(41, 128, 185,1.0);}
+    30%  {background:rgba(52, 152, 219,1.0);}
+    40%  {background:rgba(211, 84, 0,1.0);} 
+    50%  {background:black;}
+    60%  {background:rgba(44, 62, 80,1.0);}
+    70%  {background:rgba(52, 73, 94,1.0);}
+    80%  {background:rgba(189, 195, 199,1.0);}
+    90%  {background:rgba(236, 240, 241,1.0);}
+    100% {background:rgba(142, 68, 173,1.0);}
+  
+}
+#nog
+{
+   height:200px;
+   width:200px;
+   background-color:rgba(142, 68, 173,1.0);
+   position: relative;
+   left: 25px;
+   top: 25px;
+   border-radius: 5px;
+   animation: pruebag 10s;
+}
+@keyframes pruebag
+{
+    0%   {background:rgba(142, 68, 173,1.0);}
+    10%  {background:rgba(155, 89, 182,1.0);}
+    20%  {background:rgba(231, 76, 60,1.0);}
+    30%  {background:rgba(41, 128, 185,1.0);}
+    40%  {background:rgba(52, 152, 219,1.0);} 
+    50%  {background:rgba(211, 84, 0,1.0);}
+    60%  {background:black;}
+    70%  {background:rgba(44, 62, 80,1.0);}
+    80%  {background:rgba(52, 73, 94,1.0);}
+    90%  {background:rgba(189, 195, 199,1.0);}
+    100% {background:rgba(236, 240, 241,1.0);}
+  
+}
+#noh
+{
+   height:150px;
+   width:150px;
+   background-color:rgba(236, 240, 241,1.0);
+   position: relative;
+   left: 25px;
+   top: 25px;
+   border-radius: 5px;
+   animation: pruebah 10s;
+}
+@keyframes pruebah
+{
+    0%   {background:rgba(236, 240, 241,1.0);}
+    10%  {background:rgba(142, 68, 173,1.0);}
+    20%  {background:rgba(155, 89, 182,1.0);}
+    30%  {background:rgba(231, 76, 60,1.0);}
+    40%  {background:rgba(41, 128, 185,1.0);} 
+    50%  {background:rgba(52, 152, 219,1.0);}
+    60%  {background:rgba(211, 84, 0,1.0);}
+    70%  {background:black;}
+    80%  {background:rgba(44, 62, 80,1.0);}
+    90%  {background:rgba(52, 73, 94,1.0);}
+    100% {background:rgba(189, 195, 199,1.0);}
+  
+}
+#noi
+{
+   height:100px;
+   width:100px;
+   background-color:rgba(189, 195, 199,1.0);
+   position: relative;
+   left: 25px;
+   top: 25px;
+   border-radius: 5px;
+   animation: pruebai 10s;
+}
+@keyframes pruebai
+{
+    0%   {background:rgba(189, 195, 199,1.0);}
+    10%  {background:rgba(236, 240, 241,1.0);}
+    20%  {background:rgba(142, 68, 173,1.0);}
+    30%  {background:rgba(155, 89, 182,1.0);}
+    40%  {background:rgba(231, 76, 60,1.0);} 
+    50%  {background:rgba(41, 128, 185,1.0);}
+    60%  {background:rgba(52, 152, 219,1.0);}
+    70%  {background:rgba(211, 84, 0,1.0);}
+    80%  {background:black;}
+    90%  {background:rgba(44, 62, 80,1.0);}
+    100% {background:rgba(52, 73, 94,1.0);}
+  
+}
+#noj
+{
+   height:50px;
+   width:50px;
+   background-color:rgba(52, 73, 94,1.0);
+   position: relative;
+   left: 25px;
+   top: 25px;
+   border-radius: 5px;
+   animation: pruebaj 10s;
+}
+@keyframes pruebaj
+{
+    0%   {background:rgba(52, 73, 94,1.0);}
+    10%  {background:rgba(189, 195, 199,1.0);}
+    20%  {background:rgba(236, 240, 241,1.0);}
+    30%  {background:rgba(142, 68, 173,1.0);}
+    40%  {background:rgba(155, 89, 182,1.0);} 
+    50%  {background:rgba(231, 76, 60,1.0);}
+    60%  {background:rgba(41, 128, 185,1.0);}
+    70%  {background:rgba(52, 152, 219,1.0);}
+    80%  {background:rgba(211, 84, 0,1.0);}
+    90%  {background:black;}
+    100% {background:rgba(44, 62, 80,1.0);}
+  
+}
+#nok
+{
+   height:25px;
+   width:25px;
+   background-color:rgba(44, 62, 80,1.0);
+   position: relative;
+   left: 12.5px;
+   top: 12.5px;
+   border-radius: 5px;
+animation: pruebak 10s;
+}
+@keyframes pruebaj
+{
+    0%   {background:}
+    10%  {background:rgba(52, 73, 94,1.0);}
+    20%  {background:rgba(189, 195, 199,1.0);}
+    30%  {background:rgba(236, 240, 241,1.0);}
+    40%  {background:rgba(142, 68, 173,1.0);} 
+    50%  {background:rgba(155, 89, 182,1.0);}
+    60%  {background:rgba(231, 76, 60,1.0);}
+    70%  {background:rgba(41, 128, 185,1.0);}
+    80%  {background:rgba(52, 152, 219,1.0);}
+    90%  {background:rgba(211, 84, 0,1.0);black;}
+    100% {background:rgba(44, 62, 80,1.0);}
+  
+}

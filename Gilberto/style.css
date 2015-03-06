@@ -1,0 +1,50 @@
+#Caja
+{
+	/*caja padre*/
+	display: inline-flex;
+	flex-direction: row;
+	background-color: black;
+	height: 500px;
+	width: 100%;
+}
+#uno
+{
+	/*cajas que heredan de inline-flex*/
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	/*alto y ancho*/
+    height: 250px;
+    width: 250px;
+    margin-right: 10px;
+    background-color: yellow;
+    position: relative;
+    left: 100px;
+    top: 100px;
+}
+#unoa
+ {
+ 	margin-right: 2px;
+	height: 100px;
+    width: 100px;
+    background-color: gray;
+}
+#unob
+{
+	height: 100px;
+    width: 100px;
+    background-color: pink;
+}
+#dos
+{
+	height: 250px;
+	width: 250px;
+	margin-right: 10px;	
+	background-color: white;
+}
+#tres
+{
+	height: 250px;
+	width: 250px;
+	background-color: white;
+}

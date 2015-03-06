@@ -1,8 +1,20 @@
-
 .a{
+	color: red;
+	background-image:url(fotos/x.jpg);
+	background-repeat: repeat;
+	width: 999;
+	height: 700;
+}
+.b{
 
-	background: black;
-color: red;
-border-style: red;
+	font-size: 50;
+	font-style: black;
 
+
+}
+.c{
+	font-size: 40;
+background-image: url(fotos/oso.gif);
+width: 250;
+height: 320;
 }

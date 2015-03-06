@@ -10,7 +10,7 @@ concreto = rgba(149, 165, 166,1.0)
 turquesa = rgba(26, 188, 156,1.0)
 verdeoceano = rgba(22, 160, 133,1.0)
 amarillogirasol = rgba(241, 196, 15,1.0)
-anaranjado = rgba(243, 156, 18,1.0)
+naranja = rgba(243, 156, 18,1.0)
 esmeralda = rgba(46, 204, 113,1.0)
 nephritis = rgba(39, 174, 96,1.0)
 carrot = rgba(230, 126, 34,1.0)
@@ -35,8 +35,11 @@ bordes(n)
 	-ms-border-radius n
 	-o-border-radius n
 	border-radius n
-
-
+	
+	/*el selector * se usa para asignarle esas propiedades a todas las etiquetas que existen en la pagina web 0*/
+*
+	margin 0
+	padding 0
 body
 	/* el atributo background se usa en body, asi como en etiquetas que hagan la funcion de contenedor, 
 	div, article, section, footer...
@@ -45,8 +48,6 @@ body
 	color concreto
 	/* el atributo font-family sirve para agregarle un tipo de fuente al la pagina web */
 	font-family 'Helvetica', sans-serif
-	margin 0
-	padding 0
 	text-align center
 	text-rendering optimizeLegibility
 	
@@ -54,7 +55,7 @@ body
 /*CAJA con borde NEGRO cabecera ES LA CAJA EXTERNA MAS GRANDE DE TODAS QUE CONTENDRA A TODAS LAS DEMAS*/
 .cabecera
 	background-color rosapomegranade
-	border 2px solid black
+	/*border 2px solid black*/
 	height 450px
 	width 100%	
 	/*INICIO MENU
@@ -65,8 +66,6 @@ body
 #menu
 	//border 1px solid yellow
 	height 100px
-	margin 0
-	padding 0
 	width 100%
 	/*CAJA con borde ANARANJADO hace referencia a la etiqueta NAV*/
 	nav
@@ -78,17 +77,15 @@ body
 		width 700px
 	ul
 		height 100px		
-		margin 0
-		padding 0
 		list-style none
 		/*CAJA con borde BLANCO hace referencia a la etiqueta LI*/
 	li
-		border 1px solid blanco
+		/*border 1px solid blanco*/
 		display inline
 		padding  0 0.8em 0 0
 		/*CAJA con borde VERDE OSCURO hace referencia a la etiqueta A*/
 	a
-		border 1px solid nephritis
+		/*border 1px solid nephritis*/
 		color blanco
 		text-decoration none
 	
@@ -96,7 +93,7 @@ body
 		coloquemos el cursos sobre el objeto que estamos manipulando o al cual vamos a hacer click
 		*/				
 	a:hover
-		color pomegranade
+		color niggas
 		text-decoration none
 	a:active
 		background-color blanco
@@ -114,7 +111,7 @@ que va a contener:
 */
 
 #imagenNombre
-	border 3px solid asbestos 
+	/*border 3px solid asbestos */
 	background url('../img/paris.png')
 	background-repeat no-repeat
 	background-position bottom
@@ -130,7 +127,7 @@ que va a contener:
 inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta caja ocupa el 80% de ancho de la web y va centrada
 		*/
 #contenedorCentrado
-	border 2px solid midnightblue
+	/*border 2px solid midnightblue*/
 	display inline-flex
 	height 100%
 	width 80%
@@ -138,7 +135,7 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
 	margin-right 10%
 /* inicio DE LA CAJA azul claro, CONTENEDORA DE LA CAJA de la foto, esta caja ocupa 40% de la caja azul oscuro*/	
 #imagenFotoIzquierda
-	border 2px solid belizehola
+	/*border 2px solid belizehola*/
 	height 100%
 	width 40%
 #fotosj
@@ -146,7 +143,7 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
 	background-repeat no-repeat
 	background-position center
 	background-size 135%
-	border 2px solid black
+	/*border 2px solid black*/
 	bordes 200px 200px 200px 200px
 	height 70%
 	margin-left 40%
@@ -159,7 +156,7 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
 	para el titulo,subtitulo y boton, 
 	esta caja ocupa 60% de la caja azul oscuro*/
 #imagenTituloDerecha
-	border 2px solid blanco
+	/*border 2px solid blanco*/
 	color blanco
 	height 50%
 	margin-top 5%
@@ -167,13 +164,9 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
 	width 60%
 	h1 
 		font-size 4em
-		margin 0
-		padding 0
 	h4 
 		font-size 1.5em
 		font-weight lighter
-		margin 0
-		padding 0
 	/*div utilizado para dar aspecto de boton claro*/
 	#botonAspect
 		background-color wetasphalt
@@ -202,7 +195,7 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
 
 .divisorBlanco
 	background-color blanco
-	border 1px solid carrot
+	/*border 1px solid carrot*/
 	clear both
 	display flex
 	height 50px
@@ -212,7 +205,6 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
 /*Caja del titulo*/
 #titulos
 	background-color blanco
-	border 3px solid red
 	color black
 	display flex
 	height 100px
@@ -223,17 +215,12 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
 		font-size 3em
 		font-weight lighter
 		line-height 30px
-		padding 0
 		width 100px
 	/*Fin de la caja del titulo*/
 	/*Inicio del contenido del portafolio*/
 #portafolio
-	border 3px solid white
-	display flex
 	height 500px
-	flex-direction row
-	margin 0
-	padding 0
+	display flex
 	width 100%
 	/*Columna izquierda unica columna, grande de alto=height*/
 #columnaIzquierda
@@ -241,39 +228,28 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
 	background-repeat no-repeat
 	background-position center
 	background-size 100%
-	border 2px solid black
-	display flex
 	height 100%
 	margin-left 10px
 	margin-right 10px
-	padding 0
 	width 20%
 	/**/
 #columnaDerecha
-	border 2px solid amarillogirasol
 	display flex-inline
 	flex-direction row
 	height 100%
-	margin 0
-	padding 0
 	width 80%
 /*Fila Derecha arriba color verde oceano*/
 #derechaArriba
-	border 2px solid verdeoceano
 	display flex
 	height 65%
-	margin-bottom 10px
-	padding 0
 	width 100%
 #AcolumnaUno
 	background url('../img/portafolio/cuadroDos.jpg')
 	background-repeat no-repeat
 	background-position center
 	background-size 100%
-	border 1px solid anaranjado
 	height 100%
 	margin-right 10px
-	padding 0
 	order 1
 	width 30%
 #AcolumnaDos
@@ -283,26 +259,21 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
 	background-size 100%
 	border 1px solid blanco
 	height 100%
-	margin 0
-	padding 0
-	order 2
+	order 1
 	width 70%
 /*inicio fila derecha abajo*/
 #derechaAbajo
-	border 2px solid red
 	display flex
 	height 30%
-	padding 0
+	margin-top 10px
 	width 100%
 #BcolumnaUno
 	background url('../img/portafolio/cuadroCuatro.jpg')
 	background-repeat no-repeat
 	background-position center
 	background-size 100%
-	border 1px solid anaranjado
 	height 100%
 	margin-right 10px
-	padding 0
 	order 1
 	width 33%
 #BcolumnaDos
@@ -310,12 +281,11 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
 	background-repeat no-repeat
 	background-position center
 	background-size 100%
-	border 1px solid blanco
+	/*border 1px solid blanco*/
 	height 100%
-	margin 0
 	margin-right 10px
 	padding 0
-	order 2
+	order 1
 	width 33%
 #BcolumnaTres
 	background url('../img/portafolio/cuadroSeis.jpg')
@@ -324,86 +294,67 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
 	background-size 100%
 	border 1px solid blanco
 	height 100%
-	margin 0
-	padding 0
-	order 3
+	order 1
 	width 33%
 /*Fin de la seccion portafolio*/
-
 /*Inicio de la seccion de articulos*/
 #cuerpoArticulo	
 	/*esta caja contendra a la caja utilizada para centrar los articulos*/
-	border 1px solid black
 	background-color blanco
 	font-family "Helvetica" sans-serif
 	color #000
-	margin 0
-	padding 0
 	width 100%
 	height 300px
 #cajaArticulos
-	/*Esta caja contendra a las 3 cajas o culumnas de los articulos*/	
-	border 3px solid yellow
-	margin 0
-	padding 0
 	display inline-flex
 	flex-direction row
 	justify-content center
-	order 2
+	order 1
 	height 100%
 	width 90%
-#cajaArticulos + #articuloA + #articuloB + #articuloC
-	padding 0
-	margin 0
 #articuloA,#articuloB,#articuloC
 	background-color white
 	bordes 20px
 #articuloA
-	border 3px solid darkgreen
 	height 100%
 	order 1
 	margin-right 3%
 	width 40%
 #articuloB
-	border 3px solid darkblue
 	height 100%
-	order 2
+	order 1
 	margin-right 3%
 	width 40%
 #articuloC
-	border 3px solid darkred
 	height 100%
-	order 3
-	padding 0
-	margin 0
+	order 1
 	width 40%
 /*Fin de articulos*/
 
 /*Inicio de la seccion de contacto*/
-
 #contacto
 	background-color grisscarlet
-	border 1 solid anaranjado
+	background-repeat no-repeat
 	color black
 	display flex
 	flex-direction row
 	height 400px
 	justify-content center
-	margin 0
-	padding 0
 	width 100%
+/*cuadro utilizado para ser centrado*/
 #contactoCentrado
 	background-color blanco
-	border 2px solid anaranjado
 	display inline-flex
 	height 100%
+	margin-right 10%
+	margin-left 10%
 	width 80%
 #columnaImg
-	border 1px solid rosa
 	display flex
 	height 100%
 	justify-content center
 	width 50%
+	/*imagen*/
 #imag
 	background url('../img/sj.jpg')
 	background-repeat no-repeat
@@ -411,20 +362,16 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
 	background-size 100%
 	height 100%
 	width 100%
+	/*columna de informacion de contacto*/
 #columnaContac
 	align-items flex-start
 	background-color grisscarlet
-	border 1px solid peterriver
 	display flex
 	flex-direction column
 	height 100%
 	justify-content center
-	margin 0
-	padding 0
 	width 50%
 	h1,h3,p,h4
-		margin 0
-		padding 0
 		order 0
 	h1
 		font-size 3.5em
@@ -432,6 +379,8 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
 		font-size 2em
 	p,h4
 		font-size 1.5em
+/*fin de la seccion de contacto*/
+	/*inicio del pie de pagina*/
 footer
 	align-content center
 	align-items center
@@ -441,12 +390,9 @@ footer
 	flex-direction row
 	height 50px
 	justify-content center
-	margin 0
-	padding 0
 	width 100%
-#autores
+#autores >
 	height 50px
-	margin 0
-	padding 0
 	width 100%
-		
+	/*fin de la seccion de pie de pagina*/
+/*BIEN FIN DE NUESTRA PRIMERA PAGINA*/

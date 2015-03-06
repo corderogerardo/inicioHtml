@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
 /* el atributo background se usa en body, asi como en etiquetas que hagan la funcion de contenedor, 
 	div, article, section, footer...
@@ -6,8 +10,6 @@ body {
   color: #95a5a6;
 /* el atributo font-family sirve para agregarle un tipo de fuente al la pagina web */
   font-family: 'Helvetica', sans-serif;
-  margin: 0;
-  padding: 0;
   text-align: center;
   text-rendering: optimizeLegibility;
 }
@@ -15,7 +17,7 @@ body {
 /*CAJA con borde NEGRO cabecera ES LA CAJA EXTERNA MAS GRANDE DE TODAS QUE CONTENDRA A TODAS LAS DEMAS*/
 .cabecera {
   background-color: rgba(192,57,43,0.5);
-  border: 2px solid #000;
+/*border 2px solid black*/
   height: 450px;
   width: 100%;
 /*INICIO MENU
@@ -26,8 +28,6 @@ body {
 }
 #menu {
   height: 100px;
-  margin: 0;
-  padding: 0;
   width: 100%;
 /*CAJA con borde ANARANJADO hace referencia a la etiqueta NAV*/
 /*aca utilizamos el parametro hover, el cual es la accion o lo que va a ocurrir cuando 
@@ -43,24 +43,22 @@ body {
 }
 #menu ul {
   height: 100px;
-  margin: 0;
-  padding: 0;
   list-style: none;
 /*CAJA con borde BLANCO hace referencia a la etiqueta LI*/
 }
 #menu li {
-  border: 1px solid #ecf0f1;
+/*border 1px solid blanco*/
   display: inline;
   padding: 0 0.8em 0 0;
 /*CAJA con borde VERDE OSCURO hace referencia a la etiqueta A*/
 }
 #menu a {
-  border: 1px solid #27ae60;
+/*border 1px solid nephritis*/
   color: #ecf0f1;
   text-decoration: none;
 }
 #menu a:hover {
-  color: #c0392b;
+  color: #323232;
   text-decoration: none;
 }
 #menu a:active {
@@ -70,6 +68,7 @@ body {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
+/*el selector * se usa para asignarle esas propiedades a todas las etiquetas que existen en la pagina web 0*/
   text-decoration: none;
 }
 /*Fin del menu
@@ -83,7 +82,7 @@ que va a contener:
 3da caja para el texto y boton ubicada a la derecha.
 */
 #imagenNombre {
-  border: 3px solid #7f8c8d;
+/*border 3px solid asbestos */
   background: url("../img/paris.png");
   background-repeat: no-repeat;
   background-position: bottom;
@@ -100,7 +99,7 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
 		*/
 }
 #contenedorCentrado {
-  border: 2px solid #2c3e50;
+/*border 2px solid midnightblue*/
   display: inline-flex;
   height: 100%;
   width: 80%;
@@ -109,7 +108,7 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
 }
 /* inicio DE LA CAJA azul claro, CONTENEDORA DE LA CAJA de la foto, esta caja ocupa 40% de la caja azul oscuro*/
 #imagenFotoIzquierda {
-  border: 2px solid #2980b9;
+/*border 2px solid belizehola*/
   height: 100%;
   width: 40%;
 }
@@ -118,12 +117,13 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
   background-repeat: no-repeat;
   background-position: center;
   background-size: 135%;
-  border: 2px solid #000;
+/*border 2px solid black*/
   -webkit-border-radius: 200px;
   -moz-border-radius: 200px;
   -ms-border-radius: 200px;
   -o-border-radius: 200px;
   border-radius: 200px;
+/*el selector * se usa para asignarle esas propiedades a todas las etiquetas que existen en la pagina web 0*/
   height: 70%;
   margin-left: 40%;
   margin-top: 2%;
@@ -136,7 +136,7 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
 	esta caja ocupa 60% de la caja azul oscuro*/
 }
 #imagenTituloDerecha {
-  border: 2px solid #ecf0f1;
+/*border 2px solid blanco*/
   color: #ecf0f1;
   height: 50%;
   margin-top: 5%;
@@ -151,14 +151,10 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
 }
 #imagenTituloDerecha h1 {
   font-size: 4em;
-  margin: 0;
-  padding: 0;
 }
 #imagenTituloDerecha h4 {
   font-size: 1.5em;
   font-weight: lighter;
-  margin: 0;
-  padding: 0;
 }
 #imagenTituloDerecha #botonAspect {
   background-color: #34495e;
@@ -167,6 +163,7 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
   border-radius: 15px;
+/*el selector * se usa para asignarle esas propiedades a todas las etiquetas que existen en la pagina web 0*/
   height: 50px;
   width: 150px;
 }
@@ -182,6 +179,7 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
   border-radius: 15px;
+/*el selector * se usa para asignarle esas propiedades a todas las etiquetas que existen en la pagina web 0*/
   height: 50px;
   width: 150px;
 }
@@ -192,7 +190,7 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
 /*Espacio en blanco para separar secciones*/
 .divisorBlanco {
   background-color: #ecf0f1;
-  border: 1px solid #e67e22;
+/*border 1px solid carrot*/
   clear: both;
   display: flex;
   height: 50px;
@@ -202,7 +200,6 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
 /*Caja del titulo*/
 #titulos {
   background-color: #ecf0f1;
-  border: 3px solid #f00;
   color: #000;
   display: flex;
   height: 100px;
@@ -216,16 +213,11 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
   font-size: 3em;
   font-weight: lighter;
   line-height: 30px;
-  padding: 0;
   width: 100px;
 }
 #portafolio {
-  border: 3px solid #fff;
-  display: flex;
   height: 500px;
-  flex-direction: row;
-  margin: 0;
-  padding: 0;
+  display: flex;
   width: 100%;
 /*Columna izquierda unica columna, grande de alto=height*/
 }
@@ -234,31 +226,22 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-  border: 2px solid #000;
-  display: flex;
   height: 100%;
   margin-left: 10px;
   margin-right: 10px;
-  padding: 0;
   width: 20%;
 /**/
 }
 #columnaDerecha {
-  border: 2px solid #f1c40f;
   display: flex-inline;
   flex-direction: row;
   height: 100%;
-  margin: 0;
-  padding: 0;
   width: 80%;
 }
 /*Fila Derecha arriba color verde oceano*/
 #derechaArriba {
-  border: 2px solid #16a085;
   display: flex;
   height: 65%;
-  margin-bottom: 10px;
-  padding: 0;
   width: 100%;
 }
 #AcolumnaUno {
@@ -266,10 +249,8 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-  border: 1px solid #f39c12;
   height: 100%;
   margin-right: 10px;
-  padding: 0;
   order: 1;
   width: 30%;
 }
@@ -280,17 +261,14 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
   background-size: 100%;
   border: 1px solid #ecf0f1;
   height: 100%;
-  margin: 0;
-  padding: 0;
-  order: 2;
+  order: 1;
   width: 70%;
 }
 /*inicio fila derecha abajo*/
 #derechaAbajo {
-  border: 2px solid #f00;
   display: flex;
   height: 30%;
-  padding: 0;
+  margin-top: 10px;
   width: 100%;
 }
 #BcolumnaUno {
@@ -298,10 +276,8 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-  border: 1px solid #f39c12;
   height: 100%;
   margin-right: 10px;
-  padding: 0;
   order: 1;
   width: 33%;
 }
@@ -310,12 +286,11 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-  border: 1px solid #ecf0f1;
+/*border 1px solid blanco*/
   height: 100%;
-  margin: 0;
   margin-right: 10px;
   padding: 0;
-  order: 2;
+  order: 1;
   width: 33%;
 }
 #BcolumnaTres {
@@ -325,39 +300,26 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
   background-size: 100%;
   border: 1px solid #ecf0f1;
   height: 100%;
-  margin: 0;
-  padding: 0;
-  order: 3;
+  order: 1;
   width: 33%;
 }
 /*Fin de la seccion portafolio*/
 /*Inicio de la seccion de articulos*/
 #cuerpoArticulo {
 /*esta caja contendra a la caja utilizada para centrar los articulos*/
-  border: 1px solid #000;
   background-color: #ecf0f1;
   font-family: "Helvetica" sans-serif;
   color: #000;
-  margin: 0;
-  padding: 0;
   width: 100%;
   height: 300px;
 }
 #cajaArticulos {
-/*Esta caja contendra a las 3 cajas o culumnas de los articulos*/
-  border: 3px solid #ff0;
-  margin: 0;
-  padding: 0;
   display: inline-flex;
   flex-direction: row;
   justify-content: center;
-  order: 2;
+  order: 1;
   height: 100%;
   width: 90%;
-}
-#cajaArticulos + #articuloA + #articuloB + #articuloC {
-  padding: 0;
-  margin: 0;
 }
 #articuloA,
 #articuloB,
@@ -368,56 +330,52 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
   border-radius: 20px;
+/*el selector * se usa para asignarle esas propiedades a todas las etiquetas que existen en la pagina web 0*/
 }
 #articuloA {
-  border: 3px solid #006400;
   height: 100%;
   order: 1;
   margin-right: 3%;
   width: 40%;
 }
 #articuloB {
-  border: 3px solid #00008b;
   height: 100%;
-  order: 2;
+  order: 1;
   margin-right: 3%;
   width: 40%;
 }
 #articuloC {
-  border: 3px solid #8b0000;
   height: 100%;
-  order: 3;
-  padding: 0;
-  margin: 0;
+  order: 1;
   width: 40%;
 }
 /*Fin de articulos*/
 /*Inicio de la seccion de contacto*/
 #contacto {
   background-color: #e1e3e2;
-  border: 1 solid #f39c12;
+  background-repeat: no-repeat;
   color: #000;
   display: flex;
   flex-direction: row;
   height: 400px;
   justify-content: center;
-  margin: 0;
-  padding: 0;
   width: 100%;
 }
+/*cuadro utilizado para ser centrado*/
 #contactoCentrado {
   background-color: #ecf0f1;
-  border: 2px solid #f39c12;
   display: inline-flex;
   height: 100%;
+  margin-right: 10%;
+  margin-left: 10%;
   width: 80%;
 }
 #columnaImg {
-  border: 1px solid rgba(231,76,60,0.6);
   display: flex;
   height: 100%;
   justify-content: center;
   width: 50%;
+/*imagen*/
 }
 #imag {
   background: url("../img/sj.jpg");
@@ -426,25 +384,21 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
   background-size: 100%;
   height: 100%;
   width: 100%;
+/*columna de informacion de contacto*/
 }
 #columnaContac {
   align-items: flex-start;
   background-color: #e1e3e2;
-  border: 1px solid #3498db;
   display: flex;
   flex-direction: column;
   height: 100%;
   justify-content: center;
-  margin: 0;
-  padding: 0;
   width: 50%;
 }
 #columnaContac h1,
 #columnaContac h3,
 #columnaContac p,
 #columnaContac h4 {
-  margin: 0;
-  padding: 0;
   order: 0;
 }
 #columnaContac h1 {
@@ -457,6 +411,8 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
 #columnaContac h4 {
   font-size: 1.5em;
 }
+/*fin de la seccion de contacto*/
+/*inicio del pie de pagina*/
 footer {
   align-content: center;
   align-items: center;
@@ -466,13 +422,11 @@ footer {
   flex-direction: row;
   height: 50px;
   justify-content: center;
-  margin: 0;
-  padding: 0;
   width: 100%;
 }
-#autores {
+#autores > {
   height: 50px;
-  margin: 0;
-  padding: 0;
   width: 100%;
+/*fin de la seccion de pie de pagina*/
 }
+/*BIEN FIN DE NUESTRA PRIMERA PAGINA*/
