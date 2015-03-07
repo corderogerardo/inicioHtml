@@ -1,0 +1,134 @@
+body {
+  background-image: url("./fotos/bc.jpg");
+  width: 1000px;
+  height: 100%;
+}
+.espacio {
+  background-color: #000;
+  width: 100%;
+  height: 20px;
+  display: flex;
+}
+.espacio2 {
+  background-color: #008000;
+  width: 100%;
+  height: 20px;
+  display: flex;
+}
+.espacio3 {
+  background-color: #ff0;
+  width: 100%;
+  height: 20px;
+  display: flex;
+}
+.espacio4 {
+  background-color: #f00;
+  width: 100%;
+  height: 25px;
+  display: flex;
+}
+.rasta {
+  color: #808080;
+  font-family: arial;
+  font-size: 40px;
+}
+#b {
+  background-color: #00f;
+  width: 100%;
+  height: 1px;
+  color: #000;
+}
+#menu {
+  text-align: right;
+  height: 100%;
+  width: 100%;
+}
+#menu nav {
+  font-size: 20px;
+  height: 100%;
+  width: 100%;
+  text-align: left;
+  color: #000;
+}
+#menu nav li {
+  display: inline;
+}
+#menu nav li a {
+  color: #000;
+  font-family: cursive;
+}
+#cabecera {
+  height: 100%;
+  width: 100%;
+  font-family: cursive;
+  color: #fff;
+  text-align: center;
+}
+.tr {
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+}
+#desorden {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+}
+#derecha img {
+  width: 80%;
+  height: 60%;
+  text-align: right;
+  display: flex;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+#derecha h3 {
+  font-size: 30;
+  font-family: cursive;
+  color: #fff;
+}
+#izquierda h3 {
+  color: #fff;
+  font-size: 5;
+  font-family: cursive;
+  text-align: top;
+}
+#izquierda img {
+  width: 50%;
+  height: 40%;
+  text-align: right;
+  display: flex;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+#const {
+  color: #000;
+  font-family: arial;
+  font-size: 40px;
+  display: flex;
+  width: 100%;
+  height: 1px;
+}
+#contenedor {
+  display: inline-flex;
+  width: 100%;
+  height: 320px;
+  flex-direction: row;
+}
+#caja1 {
+  flex: 0, 1;
+  order: 0;
+  background-image: url("../fotos/s2.jpg");
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 50%;
+}
+#caja2 {
+  flex: 0, 1;
+  order: 1;
+  background-image: url("../fotos/hip.jpg");
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 50%;
+}

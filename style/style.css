@@ -267,6 +267,7 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
 #derechaAbajo {
   display: flex;
   height: 30%;
+  margin-top: 22px;
   width: 100%;
 }
 #BcolumnaUno {
