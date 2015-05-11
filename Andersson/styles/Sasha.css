@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+	background-color: blue;
+	font-family: 'Helvetica', sans-serif;
+    text-align: center;
+    text-rendering: optimizeLegibility;
+}
+
+.Cabecera{
+	background-color: rgba(127, 140, 141,1.0);
+    border: 2px solid #000;
+    border-color: red;
+    height: 450px;
+    width: 100%;
+}
+
+#menu {
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: rgba(52, 73, 94,1.0); /* aa */
+   -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+#menu nav {
+  font-size: 1.3em;
+  height: 100%;
+  line-height: 100px;
+  margin-left: 5%;
+  width: 700px;
+}
+
+#menu ul {
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+/*CAJA con borde BLANCO hace referencia a la etiqueta LI*/
+}
+
+#menu li {
+  border: 1px solid #ecf0f1;
+  display: inline;
+  padding: 0 0.8em 0 0;
+/*enlaces*/
+}
+
+#menu a {
+  border: 1px solid #27ae60;
+  color: #ecf0f1;
+  text-decoration: none;
+}
+
+#menu a:hover {
+  color: rgba(22, 160, 133,1.0);
+  text-decoration: none;
+  -webkit-transition-property: all;
+  -webkit-transition-duration:.3s;
+}
+#menu a:active {
+  background-color: #ecf0f1;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+   -webkit-transition-property: all;
+  -webkit-transition-duration:.0s;
+}
+
+
+#Body1
+{
+
+  background-color: brown;
+    height: 350px;
+    width: 100%;
+    border: 4px solid #ecf0f1;
+
+
+}
+
+
+#contenedorCentrado {
+ /* border: 4px solid brown; */
+  display: inline-flex;
+  height: 100%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#imagenFotoDerecha {
+  border: 4px solid red;
+  height: 100%;
+  width: 40%;
+  margin-left: 60%;
+}
+
+#FotoLOGOP{
+/* Imagen pendiente aqui */
+background-color: black;
+  background-size: 135%;
+/*border 2px solid black*/
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  -ms-border-radius: 200px;
+  -o-border-radius: 200px;
+  border-radius: 200px;
+  height: 100%;
+  margin-left: 1%;
+  margin-top: 1%;
+  width: 100%;
+  vertical-align: left;
+}
+
+#ImagenTituloIzquierda
+{
+  border: 4px solid red;
+  color: #ecf0f1;
+  height: 50%;
+   width: 55%;
+  margin-top: -20%;
+  text-align: right;
+
+}
+
+#ImagenTituloIzquierda h1{
+    font-size: 3.5em;
+}
+
+#ImagenTituloIzquierda h4{
+    font-size: 1.5em;
+}
+
+.divisorBlanco {
+  background-color: #ecf0f1;
+/*border 1px solid carrot*/
+  clear: both;
+  display: flex;
+  height: 50px;
+  width: 100%;
+}
+
+#tituloA {
+  background-color: #ecf0f1;
+  color: #000;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  width: 100%;
+/*Fin de la caja del titulo*/
+/*Inicio del contenido del portafolio*/
+}
+#tituloA h1 {
+  height: 100px;
+  font-size: 3em;
+  font-weight: lighter;
+  line-height: 30px;
+  width: 100px;
+}
+
+
+#cuerpoArticulo {
+/*esta caja contendra a la caja utilizada para centrar los articulos*/
+  background-color: #ecf0f1;
+  font-family: "Helvetica" sans-serif;
+  color: #000;
+  width: 100%;
+  height: 300px;
+}
+#cajaArticulos {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  order: 1;
+  height: 100%;
+  width: 90%;
+}
+#articuloA,
+#articuloB,
+#articuloC {
+  background-color: #fff;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+/*el selector * se usa para asignarle esas propiedades a todas las etiquetas que existen en la pagina web 0*/
+}
+#articuloA {
+  height: 100%;
+  order: 1;
+  margin-right: 3%;
+  width: 40%;
+}
+#articuloB {
+  height: 100%;
+  order: 1;
+  margin-right: 3%;
+  width: 40%;
+}
+#articuloC {
+  height: 100%;
+  order: 1;
+  width: 40%;
+}
+
+
+

@@ -1,0 +1,25 @@
+//mixins o funciones stylus
+bordes(n)
+	-webkit-border-radius n
+	-moz-border-radius n
+	-ms-border-radius n
+	-o-border-radius n
+	border-radius n
+// o puedes crear variables
+//variables usadas para manejar mas facil el color
+rosa = rgba(231, 76, 60,0.6)
+pomegranade = rgba(192, 57, 43,1.0)
+rosapomegranade = rgba(192, 57, 43,0.5)
+blanco = rgba(236, 240, 241,1.0)
+concreto = rgba(149, 165, 166,1.0)
+/*ahora las grandes bondades de usar stylus es que podemos crear estilos sin preocuparnos por las  {} : ; '' entre otras cosas, por ejemplo*/
+#menu
+	/*uso de una funcion*/
+	bordes 20px
+	a /*puedo usar la funcion donde yo quiera*/
+		bordes 30px
+#contenedor
+	margin 0
+	padding 0
+	h1
+		font-size 5em

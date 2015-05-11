@@ -90,6 +90,7 @@ que va a contener:
   background-size: 100% 85%;
   height: 350px;
   width: 100%;
+    border: 1px solid #ecf0f1;
 /* es la caja azul noche, su ancho es mas pequeño 
 		
 		lo cual nos permite asignarle un margen izquierdo y un margen derecho,
@@ -330,6 +331,7 @@ inicio DE LA CAJA azul CONTENEDORA DE LAS CAJAS de la foto, y del titulo, esta c
 /*el selector * se usa para asignarle esas propiedades a todas las etiquetas que existen en la pagina web 0*/
 }
 #articuloA {
+  
   height: 100%;
   order: 1;
   margin-right: 3%;

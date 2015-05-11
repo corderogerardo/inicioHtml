@@ -1,0 +1,266 @@
+//variables usadas para manejar mas facil el color
+rosa = rgba(231, 76, 60,0.6)
+pomegranade = rgba(192, 57, 43,1.0)
+rosapomegranade = rgba(192, 57, 43,0.5)
+blanco = rgba(236, 240, 241,1.0)
+concreto = rgba(149, 165, 166,1.0)
+turquesa = rgba(26, 188, 156,1.0)
+verdeoceano = rgba(22, 160, 133,1.0)
+amarillogirasol = rgba(241, 196, 15,1.0)
+naranja = rgba(243, 156, 18,1.0)
+esmeralda = rgba(46, 204, 113,1.0)
+nephritis = rgba(39, 174, 96,1.0)
+carrot = rgba(230, 126, 34,1.0)
+pumpkin = rgba(211, 84, 0,1.0)
+peterriver = rgba(52, 152, 219,1.0)
+belizehola = rgba(41, 128, 185,1.0)
+alizarin = rgba(231, 76, 60,1.0)
+amatista = rgba(155, 89, 182,1.0)
+wisteria = rgba(142, 68, 173,1.0)
+clouds = rgba(236, 240, 241,1.0)
+silver = rgba(189, 195, 199,1.0)
+wetasphalt = rgba(52, 73, 94,1.0)
+midnightblue = rgba(44, 62, 80,1.0)
+asbestos = rgba(127, 140, 141,1.0)
+grisscarlet = #e1e3e2
+niggas = #323232
+
+/*puedes crear funciones o mixins*/
+bordes(n)
+	-webkit-border-radius n
+	-moz-border-radius n
+	-ms-border-radius n
+	-o-border-radius n
+	border-radius n
+/*ahora las grandes bondades de usar stylus es que podemos crear estilos sin preocuparnos por las  {} : ; '' entre otras cosas, por ejemplo*/
+
+*
+	margin 0
+	padding 0
+body 
+	background-color blue
+	font-family 'Helvetica' sans-serif
+	text-align center
+	text-rendering optimizeLegibility
+.Cabecera
+	background-color rgba(127, 140, 141,1.0)
+	border 2px solid #000
+	border-color red
+	height 450px
+	width 100%
+#menu
+	height: 100px;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color: rgba(52, 73, 94,1.0); /* aa */
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	nav
+		font-size 1.3em
+		height 100%
+		line-height 100px
+		margin-left 5%
+		width 700px
+		ul
+			height 100px
+			margin 0
+			padding 0
+			list-style none
+			li /*CAJA con borde BLANCO hace referencia a la etiqueta LI*/
+				border: 1px solid #ecf0f1
+				display: inline
+				padding: 0 0.8em 0 0
+				a 
+					border: 1px solid #27ae60
+					color: #ecf0f1
+					text-decoration: none
+				a:hover 
+					color: rgba(22, 160, 133,1.0)
+					text-decoration: none
+					-webkit-transition-property: all
+					-webkit-transition-duration:.3s
+					font-size: 1.2em
+				a:active 
+					background-color: black
+					-webkit-border-radius: 5px
+					-moz-border-radius: 5px
+					-ms-border-radius: 5px
+					-o-border-radius: 5px
+					border-radius: 5px
+					text-decoration: none
+					-webkit-transition-property: all
+					-webkit-transition-duration:.0s
+#Body1
+
+	background-color: brown
+	height: 350px
+	width: 100%
+	border: 4px solid #ecf0f1
+#contenedorCentrado 
+	display: inline-flex
+	height: 100%
+	width: 80%
+	margin-left: 10%
+	margin-right: 10%
+
+#imagenFotoDerecha 
+	border: 4px solid red
+	height: 100%
+	width: 40%
+	margin-left: 60%
+
+#FotoLOGOP
+// Imagen pendiente aqui
+	background-color: black
+	background-size: 135%
+	-webkit-border-radius: 200px
+	-moz-border-radius: 200px
+	-ms-border-radius: 200px
+	-o-border-radius: 200px
+	border-radius: 200px
+	height: 100%
+	margin-left: 1%
+	margin-top: 1%
+	width: 100%
+	vertical-align: left
+
+#ImagenTituloIzquierda
+	border: 4px solid red
+	color: #ecf0f1
+	height: 50%
+	width: 55%
+	margin-top: -20%
+	text-align: right
+	h1
+		font-size: 3.5em
+	h4
+		font-size: 1.5em
+
+
+.divisorBlanco 
+	background-color: #ecf0f1
+	clear: both
+	display: flex
+	height: 50px
+	width: 100%
+
+
+#tituloA 
+	background-color: #ecf0f1
+	color: #000
+	display: flex
+	height: 100px
+	justify-content: center
+	width: 100%
+	h1
+		height: 100px
+		font-size: 3em
+		font-weight: lighter
+		line-height: 30px
+		width: 100px
+
+
+
+#cuerpoArticulo 
+	background-color: #ecf0f1;
+	font-family: "Helvetica" sans-serif
+	color: #000
+	width: 100%
+	height: 300px
+
+#cajaArticulos 
+	display: inline-flex
+	flex-direction: row
+	justify-content: center
+	order: 1
+	height: 100%
+	width: 90%
+
+#articuloA,
+#articuloB,
+#articuloC
+	display: flex
+	background-color: #fff
+	-webkit-border-radius: 20px
+	-moz-border-radius: 20px
+	-ms-border-radius: 20px
+	-o-border-radius: 20px
+	border-radius: 20px
+	-webkit-box-orient: vertical
+	-moz-box-orient: vertical
+	-webkit-flex-direction: column
+	-ms-flex-direction: column
+	-webkit-box-align: center
+	-moz-box-align: center
+	-webkit-align-items: center
+	-ms-flex-align: center
+	align-items: center
+
+#articuloA 
+	height: 100%
+	order: 1
+	width: 40%
+	display: flex
+	margin-right: 3%
+
+#articuloB 
+	height: 100%
+	order: 1
+	margin-right: 3%
+	width: 40%
+	display: flex
+
+
+#articuloC 
+	height: 100%
+	order: 1
+	margin-right: 3%
+	width: 40%
+	display: flex
+
+#tituA
+	height: 10%
+	width: 90%
+	border 2px solid #000
+	border-color red
+	font-size: 20px
+
+#articuloAF,
+#articuloBF,
+#articuloCF
+	background-color: #fff
+	-webkit-border-radius: 8px
+	-moz-border-radius: 8px
+	-ms-border-radius: 8px
+	-o-border-radius: 8px
+	border-radius: 8px
+
+#articuloAF 
+	height: 70%
+	order: 1
+	width: 100%
+	background-color gray
+
+
+#articuloBF 
+	height: 70%
+	order: 1
+	width: 100%
+	background-color gray
+
+#articuloCF 
+	height: 70%
+	order: 1
+	width: 100%
+	background-color gray
+
+#articuloD
+	height: 20%
+	order: 3
+	width: 100%
+	border 2px solid #000
+	border-color red

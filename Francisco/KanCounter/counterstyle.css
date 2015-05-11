@@ -1,0 +1,322 @@
+.html
+{
+	font-family: "Helvetica";
+}
+
+#counterbody
+{
+	width: 60%;
+	height: 400px;
+	margin-left: 5%;
+	border: 1px solid red;
+	display: inline-flex;
+	flex-direction: row;
+}
+#sidebar   /*contiene info de Bw1 y opciones del menu*/
+{
+	width: 22%;
+	height: 100%;
+	border: 1px solid black;
+	margin-left: 2%;
+	display: inherit;
+	flex-direction:column;
+}
+#content
+{
+	height: 100%;
+	width:72%;
+	margin-right: 2%;
+	margin-left: 2%;
+	border:1px solid blue;
+	display: inherit;
+	flex-direction: column;
+}
+#toprow
+{
+	width: 100%;
+	height: 40%;
+	border:1px solid green;
+	margin-bottom: 2%;
+	display: inline-flex;
+	flex-direction:row;
+}
+#bottomrow
+{
+
+	width: 100%;
+	height: 40%;
+	border: 1px solid yellow;
+	margin-top: 2%;
+	display: inline-flex;
+	flex-direction:row;
+}
+#midrow
+{
+	width: 100%;
+	height: 16%;
+	border: 1px solid purple;
+}
+
+#Bw1
+{
+	padding: 0;
+	margin-bottom: 8%;
+	width: 100%;
+	height: 70%;
+	border:1px solid blue;
+	display: inline-flex;
+	flex-direction: column;
+	//overflow: hidden;
+}
+
+#Bw1top
+{
+	order:1;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height:240px;
+	//border:1px solid orange;
+	display: inline-flex;
+	flex-direction: row;
+	//overflow: hidden;
+}
+#Bw1bottom
+{
+	order: 2;
+	width: 100%;
+	//border: 1px solid pink;
+	margin-top: 5px;
+	height: 30px;
+	text-align: center;
+	padding-top: 7px;
+}
+#menu
+{
+	height: 24%;
+	width: 100%;
+	border: 1px solid maroon;
+	margin-bottom: 8%
+}
+#Bw1Numbers
+{
+	height: 240px;
+	width: 40%;
+	//border:1px solid red;
+	display: inherit;
+	flex-direction: column;
+	text-align: center;
+}
+#Bw1Buttons
+{
+
+	height: 240px;
+	width: 60%;
+	//border:1px solid blue;
+
+}
+.bigdivnnumber
+{
+	margin-left: 15%;
+	width: 70%;
+	display: block;
+	margin-top: 10px;
+	height: 17px ;
+	border: none;
+	background-color: #40424b;
+	text-align: center;
+	color: white;
+	font-size: 14px;
+	border-radius: 4px 4px 0 0;
+}
+#Bw1Number1, #Bw1Number2,
+#Bw1Number3, #Bw1Number4,
+#Bw1NumberCheck
+{
+	margin-left: 15%;
+	width: 70%;
+	padding: 0;
+	height: 21px;
+	background-color: #95a5a6;
+	color: white;
+}
+
+#Bw1NumberCheck
+{
+	//background: #27ae60;
+	background: #e74c3c;
+}
+
+.Bw1Button
+{
+	margin-left: 10%;
+	width: 80%;
+	display: block;
+	margin-top: 16%;
+	height: 13%;
+	border: none;
+	background-color: #40424b;
+	text-align: center;
+	color: white;
+}
+.Bw1Button:focus
+{
+	outline: none;
+}
+.Bw1Button:hover
+{
+	background: #2980b9;
+}
+.Bw1Button:active
+{
+	background: #5CACE2;
+}
+
+.toprowbox
+{
+	width: 25%;
+	border: 1px solid black;
+	height: 154px;
+	margin: 0;
+	padding: 0;
+}
+.missiondetails
+{
+	font-size: 18px;
+	font-family: Tahoma;
+}
+
+.toprowbox
+{
+	display: inline-flex;
+	flex-direction:column;
+}
+
+.toprowcounter
+{
+	margin-top: 4px;
+	height: 48px;
+	width: 100%;
+	order: 1 ;
+	border: 1px solid red;
+	display: inline-flex;
+	flex-direction:row;
+}
+.toprowbutton
+{
+
+	height: 49px;
+	width: 100%;
+	border: 1px solid blue;
+	order: 2;
+}
+.toprowtitle
+{
+	order:3;
+	height: 30px;
+	width: 100%;
+	border: 1px solid pink;
+	height: 30px;
+	text-align: center;
+	padding-top: 7px;
+}
+.reset
+{
+	font-size: 20px;
+	width: 23%;
+	height: 31px;
+	margin-left: 24%;
+	border: none;
+	background-color: #40424b;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+
+}
+
+.reset:focus
+{
+	outline: none;
+}
+.reset:hover
+{
+	background: #2980b9;
+}
+.reset:active
+{
+	background: #5CACE2;
+}
+
+
+.increment
+{
+	width: 23%;
+	height: 31px;
+	margin-left: 14%;
+	border: none;
+	background-color: #40424b;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	margin-top: 8px;
+}
+.increment:focus
+{
+	outline: none;
+}
+.increment:hover
+{
+	background: #2980b9;
+}
+.increment:active
+{
+	background: #5CACE2;
+}
+
+.toprowcountertitle
+{
+	margin-top: 5px;
+	margin-left: 15%;
+	width: 70%;
+	display: block;
+	height: 17px ;
+	border: none;
+	background-color: #40424b;
+	text-align: center;
+	color: white;
+	font-size: 14px;
+	border-radius: 4px 4px 0 0;
+}
+.toprowcounternumber
+{
+	margin-left: 15%;
+	width: 70%;
+	padding: 0;
+	height: 21px;
+	background-color: #95a5a6;
+	color: white;
+}
+.toprowcounterright
+{
+	width: 50%;
+	height: 48px;
+	margin: 0;
+	padding: 0;
+	border: 1px solid brown;
+	display: inline-flex;
+	flex-direction: column;
+	order:2;
+	text-align: center;
+}
+.toprowcounterleft
+{
+	order:1;
+	display:inline-flex;
+	width: 50%;
+	height: 48px;
+	margin: 0;
+	padding: 0;
+	border: 1px solid lightgreen;
+	flex-direction: column;
+	text-align: center;
+}

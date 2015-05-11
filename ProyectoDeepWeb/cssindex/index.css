@@ -1,0 +1,56 @@
+/*crea tu propio estilo y lo incluyes en el index.html*/
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+/* el atributo background se usa en body, asi como en etiquetas que hagan la funcion de contenedor, 
+	div, article, section, footer...
+	*/
+  background-color: #ecf0f1;
+  color: #95a5a6;
+/* el atributo font-family sirve para agregarle un tipo de fuente al la pagina web */
+  font-family: 'Helvetica', sans-serif;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+}
+#CPmenu {
+  background-color: rgba(231,76,60,0.6);
+  border: 1px solid #000;
+  display: inline-flex;
+  height: 25px;
+  width: 100%;
+}
+#cajaMenu {
+  background-color: #3498db;
+  border: 1px solid verde;
+  height: 300px;
+  width: 100%;
+}
+#contenedoraMenu {
+  border: 1px solid #f39c12;
+  display: inline-flex;
+  height: 200px;
+  width: 90%;
+}
+#logoytitulo {
+  border: 1px solid #2c3e50;
+  display: inline-flex;
+  height: 100%;
+  width: 30%;
+}
+#imgLogo {
+  border: 1px solid #9b59b6;
+  height: 50%;
+  width: 30%;
+}
+#titulo {
+  border: 1px solid #00f;
+  height: 50%;
+  width: 70%;
+}
+#buscador {
+  border: 1px solid #2c3e50;
+  height: 100%;
+  width: 70%;
+}

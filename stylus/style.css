@@ -1,0 +1,23 @@
+/*ahora las grandes bondades de usar stylus es que podemos crear estilos sin preocuparnos por las  {} : ; '' entre otras cosas, por ejemplo*/
+#menu {
+/*uso de una funcion*/
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+}
+#menu a {
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px;
+}
+#contenedor {
+  margin: 0;
+  padding: 0;
+}
+#contenedor h1 {
+  font-size: 5em;
+}

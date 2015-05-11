@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> KanCounter</title>
+	<link rel="stylesheet" type="text/css" href="counterstyle.css">
+	<meta charset="utf=8" />
+
+
+
+	<script type="text/javascript">
+		var Sorties=0;
+		var BossEncounter=0;
+		var BossWin=0;
+		var SRank=0;
+		var carrier=0;
+		var sub=0;
+		var transport=0;
+		var transport2=0;
+		var name="";
+		var vari=0;
+		var resetalltransport= false;
+
+		function NoBossIncrease()
+		{
+			Sorties++;
+			document.getElementById('Bw1Number1').innerHTML = Sorties;
+			CheckStatus();
+		}
+		function BossLossIncrease()
+		{	
+			BossEncounter++;
+			document.getElementById('Bw1Number2').innerHTML= BossEncounter;
+			NoBossIncrease();
+		}
+
+		function BossWinIncrease()
+		{	
+			BossWin++;
+			document.getElementById('Bw1Number3').innerHTML = BossWin;
+			BossLossIncrease();
+		}
+		function SRankIncrease()
+		{
+			SRank++;
+			document.getElementById('Bw1Number4').innerHTML= SRank;
+			CheckStatus();
+		}
+		function ResetBw1()
+		{
+			SRank=0;
+			Sorties=0;
+			BossWin=0;
+			BossEncounter=0;
+
+			var x = document.getElementById('Bw1Number1');
+			x.innerHTML="0";
+			x.style.backgroundColor="#95a5a6";
+
+			x = document.getElementById('Bw1Number2');
+			x.innerHTML="0";
+			x.style.backgroundColor="#95a5a6";
+
+			x = document.getElementById('Bw1Number3');
+			x.innerHTML="0";
+			x.style.backgroundColor="#95a5a6";
+
+			x = document.getElementById('Bw1Number4');
+			x.innerHTML="0";
+			x.style.backgroundColor="#95a5a6";
+
+			x=document.getElementById('Bw1NumberCheck');
+			x.style.backgroundColor = "#e74c3c";
+			x.innerHTML= "&#10008";
+		}	
+		function CheckBw1Status()		{
+			if (Sorties>=36)
+				{
+					var x=document.getElementById('Bw1Number1');
+					x.style.backgroundColor = "#27ae60";
+					x.innerHTML= "&#10004";
+				}
+			if (BossEncounter>=24)
+				{
+					var x=document.getElementById('Bw1Number2');
+					x.style.backgroundColor = "#27ae60";
+					x.innerHTML= "&#10004";
+				}
+			if (BossWin>=12)
+				{
+					var x=document.getElementById('Bw1Number3');
+					x.style.backgroundColor = "#27ae60";
+					x.innerHTML= "&#10004";
+				}
+			if (SRank>=6) 
+				{
+					var x=document.getElementById('Bw1Number4');
+					x.style.backgroundColor = "#27ae60";
+					x.innerHTML= "&#10004";
+				}
+			if (Sorties>=36 && BossEncounter>=24 && BossWin>=12 && SRank>=6)
+				{
+					var x=document.getElementById('Bw1NumberCheck');
+					x.style.backgroundColor = "#27ae60";
+					x.innerHTML= "&#10004 &#10004";
+				}
+		}
+		function resetcarrier()
+		{
+			carrier=0;
+			var x = document.getElementById('Bw2');
+			x.innerHTML="0";
+			x.style.backgroundColor = "#95a5a6";
+			x=document.getElementById('Bw2S');
+			x.style.backgroundColor = "#e74c3c";
+			x.innerHTML= "&#10008";
+		}
+		function resettransport()
+		{
+			if (resetalltransport==true)
+				{
+					transport=0;
+					var x = document.getElementById('Bw3');
+					x.innerHTML="0";
+					x.style.backgroundColor = "#95a5a6";
+					transport2=0;
+					x = document.getElementById('Bw4');
+					x.innerHTML="0";
+					x.style.backgroundColor = "#95a5a6";
+					x=document.getElementById('Bw4S');
+					x.style.backgroundColor = "#e74c3c";
+					x.innerHTML= "&#10008";
+				}
+			else
+				{
+					transport=0;
+					var x = document.getElementById('Bw3');
+					x.innerHTML="0";
+					x.style.backgroundColor = "#95a5a6";
+				}
+				x=document.getElementById('Bw3S');
+				x.style.backgroundColor = "#e74c3c";
+				x.innerHTML= "&#10008";
+		}
+		function resettransport2()
+		{
+			if (resetalltransport==true)
+				{
+					transport=0;
+					var x = document.getElementById('Bw3');
+					x.innerHTML="0";
+					x.style.backgroundColor = "#95a5a6";
+					transport2=0;
+					var x = document.getElementById('Bw4');
+					x.innerHTML="0";
+					x.style.backgroundColor = "#95a5a6";
+					x=document.getElementById('Bw3S');
+					x.style.backgroundColor = "#e74c3c";
+					x.innerHTML= "&#10008";
+				}
+			else
+				{
+					transport2=0;
+					var x = document.getElementById('Bw4');
+					x.innerHTML="0";
+					x.style.backgroundColor = "#95a5a6";
+				}
+			x=document.getElementById('Bw4S');
+			x.style.backgroundColor = "#e74c3c";
+			x.innerHTML= "&#10008";
+		}
+		function resetsub()
+		{
+			sub=0;
+			var x = document.getElementById('Bw5');
+			x.innerHTML="0";
+			x.style.backgroundColor = "#95a5a6";
+			x=document.getElementById('Bw5S');
+			x.style.backgroundColor = "#e74c3c";
+			x.innerHTML= "&#10008";
+		}
+
+
+
+		function increasecarrier()
+		{
+			carrier++;
+			if (carrier>=20)
+			{
+				var x = document.getElementById('Bw2');
+				x.innerHTML="";
+				x.style.backgroundColor = "#27ae60";
+				x.innerHTML= "&#10004";
+				x=document.getElementById('Bw2S');
+				x.style.backgroundColor = "#27ae60";
+				x.innerHTML= "&#10004 &#10004";
+			}
+			else
+			{
+				var x = document.getElementById('Bw2');
+				x.innerHTML= carrier;
+				x=document.getElementById('Bw2S');
+				x.style.backgroundColor = "#e74c3c";
+				x.innerHTML= "&#10008";
+			}
+		}
+
+		function increasetransport()
+		{
+			transport++;
+			if (transport>=20)
+			{
+				var x = document.getElementById('Bw3');
+				x.innerHTML="";
+				x.style.backgroundColor = "#27ae60";
+				x.innerHTML= "&#10004";
+				x=document.getElementById('Bw3S');
+				x.style.backgroundColor = "#27ae60";
+				x.innerHTML= "&#10004 &#10004";
+			}
+			else
+			{
+				var x = document.getElementById('Bw3');
+				x.innerHTML= transport;
+				x=document.getElementById('Bw3S');
+				x.style.backgroundColor = "#e74c3c";
+				x.innerHTML= "&#10008";
+			}
+		}
+
+		function increasetransport2()
+		{
+			transport2++;
+			if (transport2>=50)
+			{
+				var x = document.getElementById('Bw4');
+				x.innerHTML="";
+				x.style.backgroundColor = "#27ae60";
+				x.innerHTML= "&#10004";
+				x=document.getElementById('Bw4S');
+				x.style.backgroundColor = "#27ae60";
+				x.innerHTML= "&#10004 &#10004";
+			}
+			else
+			{
+				var x = document.getElementById('Bw4');
+				x.innerHTML= transport2;
+				x=document.getElementById('Bw4S');
+				x.style.backgroundColor = "#e74c3c";
+				x.innerHTML= "&#10008";
+			}
+		}
+		function increasesub()
+		{
+			sub++;
+			if (sub>=15)
+			{
+				var x = document.getElementById('Bw5');
+				x.innerHTML="";
+				x.style.backgroundColor = "#27ae60";
+				x.innerHTML= "&#10004";
+				x=document.getElementById('Bw5S');
+				x.style.backgroundColor = "#27ae60";
+				x.innerHTML= "&#10004 &#10004";
+			}
+			else
+			{
+				var x = document.getElementById('Bw5');
+				x.innerHTML= sub;
+				x=document.getElementById('Bw5S');
+				x.style.backgroundColor = "#e74c3c";
+				x.innerHTML= "&#10008";
+			}
+		}
+
+
+
+
+
+			/*Ya funciona la vaina pero necesito hacer click en reset al menos una vez para que pueda servir pero luego funciona normal
+			¯\_(ツ)_/¯*/
+	</script>
+</head>
+<body>
+
+<div id="counterbody">
+	<div id="sidebar">
+		<div id="Bw1">
+			<div id="Bw1top">
+				<div id="Bw1Numbers">
+					<div class="bigdivnnumber">Sorties</div>
+					<div id="Bw1Number1"></div>
+					<div class="bigdivnnumber">B. Enc.</div>
+					<div id="Bw1Number2"></div>
+					<div class="bigdivnnumber">B. Win</div>
+					<div id="Bw1Number3"></div>
+					<div class="bigdivnnumber">S Rank</div>
+					<div id="Bw1Number4"></div>
+					<div class="bigdivnnumber">Status</div>
+					<div id="Bw1NumberCheck"></div>
+				</div>
+			
+				<div id="Bw1Buttons">
+
+					<button onclick="NoBossIncrease()" class="Bw1Button">No Boss</button>
+					<button onclick="BossLossIncrease()" class="Bw1Button">Boss Loss</button>
+					<button onclick="BossWinIncrease()" class="Bw1Button">Boss Win</button>
+					<button onclick="SRankIncrease()" class="Bw1Button">S Rank</button>
+					<button onclick="ResetBw1()" class="Bw1Button">Reset</button>
+				</div>
+			</div>
+			<div id="Bw1bottom"> <span class="missiondetails"><b>Bw1:</b> 36/24/12/6</span> </div>	
+		</div>
+		<div id="menu"></div>
+	</div>
+	<div id="content">
+		<div id="toprow">
+			<div class="toprowbox">
+				<div class="toprowcounter">
+					<div class="toprowcounterleft">
+						<div class="toprowcountertitle">Carrier</div>
+						<div class="toprowcounternumber" id="Bw2">0</div>
+					</div>
+					<div class="toprowcounterright">
+						<div class="toprowcountertitle">Status</div>
+						<div class="toprowcounternumber" id="Bw2S"></div>
+					</div>
+				</div>
+				<div class="toprowbutton">
+					<button class="increment" onclick="increasecarrier()">+</button>
+					<button class="reset" onclick="resetcarrier()">&#8634</button>
+
+				</div>
+				<div class="toprowtitle">
+					<b>Bw2: </b> 20 Carriers</div>
+				</div>
+			<div class="toprowbox">
+				<div class="toprowcounter">
+					<div class="toprowcounterleft">
+						<div class="toprowcountertitle">Transp.</div>
+						<div class="toprowcounternumber" id="Bw3">0</div>
+					</div>
+					<div class="toprowcounterright">
+						<div class="toprowcountertitle">Status</div>
+						<div class="toprowcounternumber" id="Bw3S"></div>
+					</div>
+				</div>
+				<div class="toprowbutton">
+					<button class="increment" onclick="increasetransport()"> + </button>
+					<button class="reset" onclick="resettransport()">&#8634</button>
+				</div>
+				<div class="toprowtitle"><b>Bw3: </b> 20 Transport</div>
+			</div>
+			<div class="toprowbox">
+				<div class="toprowcounter">
+					<div class="toprowcounterleft">
+						<div class="toprowcountertitle">Transp.</div>
+						<div class="toprowcounternumber" id="Bw4">0</div>
+					</div>
+					<div class="toprowcounterright">
+						<div class="toprowcountertitle">Status</div>
+						<div class="toprowcounternumber" id="Bw4S"></div>
+					</div>
+				</div>
+				<div class="toprowbutton">
+					<button class="increment" onclick="increasetransport2()"> + </button>
+					<button class="reset" onclick="resettransport2()">&#8634</button>
+				</div>
+				<div class="toprowtitle"><b>Bw4: </b> 50 Transport</div>
+			</div>
+			<div class="toprowbox">
+				<div class="toprowcounter">
+					<div class="toprowcounterleft">
+						<div class="toprowcountertitle">Sub.</div>
+						<div class="toprowcounternumber" id="Bw5">0</div>
+					</div>
+					<div class="toprowcounterright">
+						<div class="toprowcountertitle">Status</div>
+						<div class="toprowcounternumber" id="Bw5S"></div>
+					</div>
+				</div>
+				<div class="toprowbutton">
+					<button class="increment" onclick="increasesub()"> + </button>
+					<button class="reset" onclick="resetsub()">&#8634</button>
+				</div>
+				<div class="toprowtitle"><b>Bw5: </b> 15 Subs </div>
+			</div>
+			
+			
+
+
+
+		</div>
+		<div id="midrow"></div>
+		<div id="bottomrow">
+					<div class="toprowbox">
+				<div class="toprowcounter">
+					<div class="toprowcounterleft">
+						<div class="toprowcountertitle">Carrier</div>
+						<div class="toprowcounternumber">0</div>
+					</div>
+					<div class="toprowcounterright">
+						<div class="toprowcountertitle">Status</div>
+						<div class="toprowcounternumber"></div>
+					</div>
+				</div>
+				<div class="toprowbutton">
+					<button class="increment"> + </button>
+					<button class="reset">&#8634</button>
+
+				</div>
+				<div class="toprowtitle">
+					<b>Bw2: </b> 20 Carriers</div>
+				</div>
+			<div class="toprowbox">
+				<div class="toprowcounter">
+					<div class="toprowcounterleft">
+						<div class="toprowcountertitle">Transp.</div>
+						<div class="toprowcounternumber">0</div>
+					</div>
+					<div class="toprowcounterright">
+						<div class="toprowcountertitle">Status</div>
+						<div class="toprowcounternumber"></div>
+					</div>
+				</div>
+				<div class="toprowbutton">
+					<button class="increment"> + </button>
+					<button class="reset">&#8634</button>
+				</div>
+				<div class="toprowtitle"><b>Bw3: </b> 20 Transport</div>
+			</div>
+			<div class="toprowbox">
+				<div class="toprowcounter">
+					<div class="toprowcounterleft">
+						<div class="toprowcountertitle">Transp.</div>
+						<div class="toprowcounternumber">0</div>
+					</div>
+					<div class="toprowcounterright">
+						<div class="toprowcountertitle">Status</div>
+						<div class="toprowcounternumber"></div>
+					</div>
+				</div>
+				<div class="toprowbutton">
+					<button class="increment"> + </button>
+					<button class="reset">&#8634</button>
+				</div>
+				<div class="toprowtitle"><b>Bw4: </b> 50 Transport</div>
+			</div>
+			<div class="toprowbox">
+				<div class="toprowcounter">
+					<div class="toprowcounterleft">
+						<div class="toprowcountertitle">Sub.</div>
+						<div class="toprowcounternumber">0</div>
+					</div>
+					<div class="toprowcounterright">
+						<div class="toprowcountertitle">Status</div>
+						<div class="toprowcounternumber"></div>
+					</div>
+				</div>
+				<div class="toprowbutton">
+					<button class="increment"> + </button>
+					<button class="reset">&#8634</button>
+				</div>
+				<div class="toprowtitle"><b>Bw5: </b> 15 Subs </div>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

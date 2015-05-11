@@ -1,0 +1,14 @@
+body,
+#menu,
+#contenedor {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+}
+body h1,
+#menu h1,
+#contenedor h1 {
+  color: #f00;
+}
