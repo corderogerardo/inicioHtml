@@ -1,22 +1,88 @@
 <!DOCTYPE html>
 <html>
-<body >
-<link rel="stylesheet" type="text/css" href="cssgaleria/galeria.css">
 <head>
-	<title>Galeria</title>
-	</head>
-	<div>
+<script type="text/javascript">
+			var pos=1;
+			var posdir=1;
+
+	function siguiente()
+	{
+		if (posdir==2) pos=pos+2;
+		++pos;
+		if (pos>3) pos=1;
+		switch (pos)
+		{
+		case 1:
+			document.getElementById('imagen').innerHTML="<img src='cssgaleria/Jellyfish.jpg' height='100%' width='100%'>"
+			
+			break;
+		case 2:
+		    document.getElementById('imagen').innerHTML="<img src='cssgaleria/Desert.jpg' height='100%' width='100%'>";
 		
-		<p>Bienvenidos a la galeria</p>
+		    break;
+		case 3:
+			document.getElementById('imagen').innerHTML="<img src='cssgaleria/Koala.jpg' height='100%' width='100%'>"
+
+		}
+
+		posdir=1;
+
+	}
+		function anterior()
+	{
+		if (posdir<1) pos=pos-2;
+		--pos;
+		if (pos==0) pos=3;
+		switch (pos)
+		{
+		case 1:
+			document.getElementById('imagen').innerHTML="<img src='cssgaleria/Jellyfish.jpg' height='100%' width='100%'>"
+			break;
+		case 2:
+		    document.getElementById('imagen').innerHTML="<img src='cssgaleria/Desert.jpg' height='100%' width='100%'>";
+		    break;
+		case 3:
+			document.getElementById('imagen').innerHTML="<img src='cssgaleria/Koala.jpg' height='100%' width='100%'>"
+
+		}
+		posdir=2;
+		
+	}
+
+	setInterval(function(){siguiente()}, 5000);
+
+
+
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="cssgaleria/galeria.css">
+	<title>gallery.cpp</title>
+</head>
+<body >
+	<div class="Container">
+		<div class="Centralbox">
+			<div class="sidebox">
+				<div class="buttom" onclick="anterior()">&lt;</div>
+			</div>
+			<div class="soncentralbox">
+					<div id="imagen"> <img src="cssgaleria/Koala.jpg" height="100%" width="100%"></div>
+					<div class="botmsg">
+						<div class="twins">Descripcion</div>
+						<div class="twins">Precio</div>
+					</div>
+				
+			</div>
+			<div class="sidebox">
+				<div class="buttom" onclick="siguiente()">&gt;</div>
+			</div>
+		</div>	
+		<p class="titulo"> Galeria</p>
 	</div>
-
-
-<div class="contenedor">
-<div class="imagenizquierda">
-</div>
-<div class="imagenderecha">
-</div>
-</div>
 
 
 </body>

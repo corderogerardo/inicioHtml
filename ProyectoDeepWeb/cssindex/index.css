@@ -54,3 +54,51 @@ body {
   height: 100%;
   width: 70%;
 }
+#menu {
+  border: 1px solid #f1c40f;
+  height: 90px;
+  width: 100%;
+}
+#menu nav {
+  align-items: center;
+  border: 1px solid #e74c3c;
+  display: inline-flex;
+  flex-direction: row;
+  font-size: 1.2em;
+  height: 90px;
+  justify-content: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+}
+#menu ul {
+  height: 20px;
+  list-style: none;
+}
+#menu li {
+  align-items: center;
+  display: inline-flex;
+  flex-direction: row;
+  height: 90px;
+  justify-content: center;
+  padding: 0 0.8em 0 0;
+}
+#menu a {
+  color: #ecf0f1;
+  height: 90px;
+  text-decoration: none;
+}
+#menu a:hover {
+  color: #323232;
+  text-decoration: none;
+}
+#menu a:active {
+  background-color: #ecf0f1;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+/*el selector * se usa para asignarle esas propiedades a todas las etiquetas que existen en la pagina web 0*/
+  text-decoration: none;
+}

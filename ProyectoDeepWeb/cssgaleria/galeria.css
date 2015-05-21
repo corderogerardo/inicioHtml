@@ -1,8 +1,84 @@
-.contenedor{
-	background: black;
-	height: 100%;
-	width: 20%;
+.Container{
+width: 100%;
+height: 450px;
+text-align: center;
+
 }
-*{
-	color: red;
+.Centralbox{
+margin-left: 15%;
+margin-right: 15%;
+margin-top: 36px;
+width: 70%;
+height: 80%;
+display: inline-flex;
+
+}
+.sidebox
+{
+	display: flex;
+	flex-direction:column;
+	align-content:center;
+	display:inline-flex;
+	height: 100%;
+	width: 10%;
+	margin: 0;
+	justify-content:center;
+	background-color: #f0e68c; 
+
+}
+.buttom{
+	align-content:center;
+	display:inline-flex;
+	justify-content:center;
+	height: 20%;
+	width: 100%;
+	font-size: 70px;
+	font-weight: bold;
+	color: #aee2d8;
+	padding: 0;
+
+}
+.soncentralbox{
+
+height: 100%;
+width: 80%;
+margin: 0;
+display: flex;
+flex-direction:column;
+justify-content:flex-end;
+
+}
+
+.botmsg{
+width: 100%;
+height: 10%;
+display: inline-flex;
+}
+.twins{
+width: 50%;
+height: 100%;
+background-color: #f0e68c;
+}
+.twins:hover
+{
+	background: #F09089;
+}
+.buttom:hover{
+	background: #8cffa9;
+}
+#imagen
+{
+	height: 90%;
+	width: 100%;
+}
+body{
+	background: #f7d8fe;
+}
+.titulo
+{
+	font-style: "Helvetica", sans-serif;
+	color: rgba(41, 128, 185,1.0);
+	font-size: 50px;
+	
+	display: inline;
 }
